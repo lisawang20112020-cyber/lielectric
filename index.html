@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LI ELECTRIC | Electric Motorcycles &amp; LiFePO4 Batteries — Jinhua Li Electric</title>
+<meta name="description" content="Jinhua Li Electric Trading Co., Ltd — Professional manufacturer of electric motorcycles, e-bicycles and LiFePO4 lithium batteries. Wholesale supply for global dealers.">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Oswald:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
+<style>
+/* ===== 设计令牌 ===== */
+:root{
+  --yellow:#FFFFFF;
+  --yellow-dark:#E0E0E0;
+  --black:#0D0D0D;
+  --green:#C6FF00;
+  --text:#1A1A1A;
+  --text2:#666;
+  --bg:#F7F7F5;
+  --card:#FFFFFF;
+  --border:#E8E8E4;
+  --display:'Oswald','Noto Sans SC',sans-serif;
+  --body:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--body);color:var(--text);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:.02em;}
+
+/* ===== 导航 ===== */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--black);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 32px;height:64px;border-bottom:2px solid var(--yellow);}
+.nav-logo{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:.06em;}
+.nav-logo .mark{width:34px;height:34px;background:var(--yellow);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--black);font-weight:700;font-size:16px;}
+.nav-links{display:flex;gap:28px;align-items:center;}
+.nav-links a{font-size:14px;font-weight:500;opacity:.85;transition:opacity .2s,color .2s;padding:4px 0;position:relative;}
+.nav-links a:hover,.nav-links a.active{opacity:1;color:var(--yellow);}
+.nav-links a.active::after{content:'';position:absolute;left:0;right:0;bottom:-4px;height:2px;background:var(--yellow);}
+.nav-cart{position:relative;display:flex;align-items:center;gap:6px;background:var(--yellow);color:var(--black);padding:8px 16px;border-radius:4px;font-weight:600;font-size:13px;transition:background .2s;}
+.nav-cart:hover{background:var(--yellow-dark);}
+.nav-cart .badge{position:absolute;top:-6px;right:-6px;background:var(--green);color:var(--black);font-size:11px;font-weight:700;min-width:18px;height:18px;border-radius:9px;display:flex;align-items:center;justify-content:center;padding:0 4px;}
+.menu-btn{display:none;background:none;border:none;color:#fff;}
+
+/* ===== 通用 ===== */
+.view{display:none;padding-top:64px;}
+.view.active{display:block;}
+.container{max-width:1200px;margin:0 auto;padding:0 24px;}
+.section{padding:72px 0;}
+.eyebrow{font-family:var(--display);font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#666;margin-bottom:12px;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:4px;font-weight:600;font-size:14px;letter-spacing:.04em;transition:all .2s;cursor:pointer;border:none;}
+.btn-primary{background:#0D0D0D;color:#fff;}
+.btn-primary:hover{background:#333;transform:translateY(-1px);}
+.btn-dark{background:var(--black);color:#fff;}
+.btn-dark:hover{background:#222;}
+.btn-outline{background:transparent;color:var(--black);border:2px solid var(--black);}
+.btn-outline:hover{background:var(--black);color:#fff;}
+.btn-white-outline{background:transparent;color:#fff;border:2px solid #fff;}
+.btn-white-outline:hover{background:#fff;color:var(--black);}
+
+/* ===== 首页 Hero ===== */
+.hero{background:var(--black);color:#fff;position:relative;overflow:hidden;min-height:560px;display:flex;align-items:center;}
+.hero::before{content:'';position:absolute;top:-120px;right:-120px;width:480px;height:480px;background:radial-gradient(circle,rgba(245,184,0,.18),transparent 70%);pointer-events:none;}
+.hero-inner{display:flex;align-items:center;gap:48px;flex-wrap:wrap;}
+.hero-text{flex:1 1 420px;min-width:0;position:relative;z-index:2;}
+.hero-tag{display:inline-block;background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.3);padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;letter-spacing:.1em;margin-bottom:20px;}
+.hero h1{font-size:clamp(36px,5vw,60px);line-height:1.08;font-weight:700;margin-bottom:20px;}
+.hero h1 .accent{color:var(--yellow);}
+.hero p{font-size:16px;color:rgba(255,255,255,.72);max-width:480px;margin-bottom:32px;}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+.hero-img{flex:1 1 380px;min-width:0;position:relative;z-index:2;}
+.hero-img img{width:100%;border-radius:8px;box-shadow:0 24px 60px rgba(0,0,0,.5);object-fit:contain;background:#fff;}
+
+/* ===== 数据条 ===== */
+.stats{background:#0D0D0D;color:#fff;padding:36px 0;}
+.stats-grid{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-around;text-align:center;}
+.stat-item .num{font-family:var(--display);font-size:36px;font-weight:700;line-height:1;}
+.stat-item .lbl{font-size:13px;font-weight:500;margin-top:6px;opacity:.8;}
+
+/* ===== 产品系列概览（首页） ===== */
+.series-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:40px;}
+.series-card{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:transform .25s,box-shadow .25s;cursor:pointer;}
+.series-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.08);}
+.series-card .thumb{height:200px;overflow:hidden;background:#f0f0ec;display:flex;align-items:center;justify-content:center;}
+.series-card .thumb{background:#fff;}
+.series-card .thumb img{width:100%;height:100%;object-fit:contain;}
+.series-card .body{padding:20px;}
+.series-card h3{font-size:20px;margin-bottom:6px;}
+.series-card p{font-size:13px;color:var(--text2);}
+
+/* ===== 优势 ===== */
+.advantages{background:var(--black);color:#fff;}
+.adv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px;margin-top:40px;}
+.adv-item{padding:28px;background:rgba(255,255,255,.04);border-radius:10px;border:1px solid rgba(255,255,255,.08);}
+.adv-item .icon{width:44px;height:44px;background:var(--yellow);border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;}
+.adv-item h4{font-size:17px;margin-bottom:8px;color:var(--yellow);}
+.adv-item p{font-size:13px;color:rgba(255,255,255,.65);line-height:1.7;}
+
+/* ===== 产品列表 ===== */
+.product-filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px;}
+.filter-btn{padding:8px 20px;border-radius:20px;border:1px solid var(--border);background:var(--card);font-size:13px;font-weight:500;cursor:pointer;transition:all .2s;}
+.filter-btn.active,.filter-btn:hover{background:var(--black);color:var(--yellow);border-color:var(--black);}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px;}
+.product-card{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s;}
+.product-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,.08);}
+.product-card .pimg{height:200px;background:#f0f0ec;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;}
+.product-card .pimg{background:#fff;}
+.product-card .pimg img{width:100%;height:100%;object-fit:contain;}
+.product-card .cat-tag{position:absolute;top:12px;left:12px;background:var(--black);color:var(--yellow);font-size:11px;font-weight:600;padding:4px 10px;border-radius:4px;letter-spacing:.06em;}
+.product-card .pbody{padding:18px;flex:1;display:flex;flex-direction:column;}
+.product-card .model{font-family:var(--display);font-size:22px;font-weight:700;letter-spacing:.04em;}
+.product-card .pname{font-size:13px;color:var(--text2);margin-bottom:10px;}
+.product-card .specs{font-size:12px;color:var(--text2);line-height:1.8;margin-bottom:14px;flex:1;}
+.product-card .specs span{display:inline-block;margin-right:10px;}
+.product-card .pfoot{display:flex;align-items:center;justify-content:space-between;gap:10px;}
+.product-card .price{font-family:var(--display);font-size:20px;font-weight:700;color:var(--black);}
+.product-card .price small{font-size:11px;color:var(--text2);font-weight:400;display:block;}
+.add-btn{background:#0D0D0D;color:#fff;padding:8px 16px;border-radius:4px;font-size:12px;font-weight:600;cursor:pointer;transition:background .2s;white-space:nowrap;}
+.add-btn:hover{background:#333;}
+
+/* ===== 产品详情 ===== */
+.detail-layout{display:flex;gap:48px;flex-wrap:wrap;align-items:flex-start;}
+.detail-img{flex:1 1 400px;min-width:0;}
+.detail-img img{width:100%;border-radius:10px;border:1px solid var(--border);object-fit:contain;background:#fff;}
+.detail-gallery{flex:1 1 400px;min-width:0;}
+.gallery-main{width:100%;aspect-ratio:1/1;background:#fff;border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.gallery-main img{max-width:100%;max-height:100%;object-fit:contain;}
+.gallery-thumbs{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;}
+.gallery-thumb{width:64px;height:64px;border:2px solid var(--border);border-radius:6px;overflow:hidden;cursor:pointer;display:flex;align-items:center;justify-content:center;background:#fff;transition:border-color .2s;flex-shrink:0;}
+.gallery-thumb img{max-width:100%;max-height:100%;object-fit:contain;}
+.gallery-thumb.active{border-color:var(--black);}
+.gallery-thumb:hover{border-color:#999;}
+.video-thumb{flex-direction:column;background:var(--black);color:#fff;gap:2px;}
+.video-thumb:hover{border-color:var(--yellow);}
+.detail-info{flex:1 1 380px;min-width:0;}
+.detail-info .model{font-family:var(--display);font-size:42px;font-weight:700;line-height:1;}
+.detail-info .pname{font-size:18px;color:var(--text2);margin:6px 0 20px;}
+.spec-table{width:100%;border-collapse:collapse;margin:20px 0;}
+.spec-table td{padding:10px 12px;border-bottom:1px solid var(--border);font-size:13px;}
+.spec-table td:first-child{color:var(--text2);width:40%;font-weight:500;}
+.spec-table td:last-child{font-weight:600;}
+.qty-row{display:flex;align-items:center;gap:16px;margin:20px 0;}
+.qty-ctrl{display:flex;align-items:center;border:1px solid var(--border);border-radius:4px;overflow:hidden;}
+.qty-ctrl button{width:36px;height:36px;font-size:18px;font-weight:600;background:var(--bg);transition:background .2s;}
+.qty-ctrl button:hover{background:var(--border);}
+.qty-ctrl input{width:48px;height:36px;text-align:center;border:none;font-size:15px;font-weight:600;font-family:var(--display);}
+.detail-price{font-family:var(--display);font-size:32px;font-weight:700;}
+.detail-price small{font-size:12px;color:var(--text2);font-weight:400;display:block;font-family:var(--body);}
+
+/* ===== 购物车 ===== */
+.cart-layout{display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;}
+.cart-items{flex:1 1 500px;min-width:0;}
+.cart-item{display:flex;gap:16px;padding:16px;background:var(--card);border:1px solid var(--border);border-radius:8px;margin-bottom:12px;align-items:center;}
+.cart-item .cimg{width:80px;height:80px;border-radius:6px;overflow:hidden;background:#f0f0ec;flex:none;}
+.cart-item .cimg{background:#fff;}
+.cart-item .cimg img{width:100%;height:100%;object-fit:contain;}
+.cart-item .cinfo{flex:1;min-width:0;}
+.cart-item .cmodel{font-family:var(--display);font-size:16px;font-weight:600;}
+.cart-item .cname{font-size:12px;color:var(--text2);}
+.cart-item .cprice{font-family:var(--display);font-size:16px;font-weight:700;margin-top:4px;}
+.cart-item .cright{display:flex;flex-direction:column;align-items:flex-end;gap:8px;flex:none;}
+.remove-btn{color:var(--text2);font-size:12px;cursor:pointer;text-decoration:underline;}
+.remove-btn:hover{color:#c00;}
+.cart-summary{flex:1 1 300px;min-width:0;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px;position:sticky;top:88px;}
+.cart-summary h3{font-size:18px;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--border);}
+.sum-row{display:flex;justify-content:space-between;padding:8px 0;font-size:14px;}
+.sum-row.total{border-top:2px solid var(--black);margin-top:8px;padding-top:14px;font-family:var(--display);font-size:20px;font-weight:700;}
+.checkout-form{margin-top:16px;}
+.checkout-form input,.checkout-form textarea{width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:4px;font-size:13px;font-family:inherit;margin-bottom:10px;}
+.checkout-form textarea{resize:vertical;min-height:60px;}
+.checkout-form label{font-size:12px;font-weight:600;color:var(--text2);display:block;margin-bottom:4px;}
+#paypal-button-container{margin-top:16px;min-height:40px;}
+.paypal-notice{background:#FFF8E1;border:1px solid #FFE082;border-radius:6px;padding:12px;font-size:12px;color:#7A5C00;margin-top:12px;line-height:1.6;}
+.empty-cart{text-align:center;padding:60px 20px;color:var(--text2);}
+.empty-cart svg{margin-bottom:16px;opacity:.4;}
+
+/* ===== 关于 ===== */
+.about-layout{display:flex;gap:40px;flex-wrap:wrap;align-items:center;}
+.about-text{flex:1 1 400px;min-width:0;}
+.about-text h2{font-size:32px;margin-bottom:16px;}
+.about-text p{font-size:14px;color:var(--text2);margin-bottom:14px;line-height:1.8;}
+.about-img{flex:1 1 360px;min-width:0;}
+.about-img img{width:100%;border-radius:10px;box-shadow:0 16px 40px rgba(0,0,0,.1);}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-top:32px;}
+.cert-item{padding:20px;background:var(--card);border:1px solid var(--border);border-radius:8px;text-align:center;}
+.cert-item .cicon{font-family:var(--display);font-size:28px;font-weight:700;color:#0D0D0D;}
+.cert-item .clbl{font-size:12px;color:var(--text2);margin-top:4px;}
+
+/* ===== 联系 ===== */
+.contact-layout{display:flex;gap:32px;flex-wrap:wrap;}
+.contact-info{flex:1 1 320px;min-width:0;}
+.contact-card{padding:24px;background:var(--black);color:#fff;border-radius:10px;margin-bottom:16px;}
+.contact-card h4{color:var(--yellow);font-size:16px;margin-bottom:12px;}
+.contact-card p{font-size:13px;color:rgba(255,255,255,.75);margin-bottom:6px;line-height:1.7;}
+.contact-card a{color:var(--yellow);}
+.contact-form{flex:2 1 480px;min-width:0;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:28px;}
+.contact-form h3{font-size:20px;margin-bottom:18px;}
+.contact-form .form-row{display:flex;gap:12px;flex-wrap:wrap;}
+.contact-form .form-row > div{flex:1 1 200px;min-width:0;}
+.contact-form label{font-size:12px;font-weight:600;color:var(--text2);display:block;margin-bottom:4px;}
+.contact-form input,.contact-form textarea,.contact-form select{width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:4px;font-size:13px;font-family:inherit;margin-bottom:14px;}
+.contact-form textarea{resize:vertical;min-height:100px;}
+
+/* ===== 页脚 ===== */
+.footer{background:var(--black);color:rgba(255,255,255,.6);padding:48px 0 24px;margin-top:0;}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;margin-bottom:32px;}
+.footer h4{color:#fff;font-size:14px;margin-bottom:14px;letter-spacing:.06em;}
+.footer p,.footer a{font-size:13px;line-height:2;color:rgba(255,255,255,.55);}
+.footer a:hover{color:var(--yellow);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:20px;font-size:12px;text-align:center;color:rgba(255,255,255,.4);}
+
+/* ===== Toast ===== */
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--black);color:var(--yellow);padding:12px 24px;border-radius:6px;font-size:14px;font-weight:600;z-index:200;transition:transform .3s;box-shadow:0 8px 24px rgba(0,0,0,.3);}
+.toast.show{transform:translateX(-50%) translateY(0);}
+
+/* ===== 响应式 ===== */
+@media(max-width:768px){
+  .nav{padding:0 16px;}
+  .nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:var(--black);flex-direction:column;padding:20px;gap:16px;border-bottom:2px solid var(--yellow);}
+  .nav-links.open{display:flex;}
+  .menu-btn{display:block;}
+  .section{padding:48px 0;}
+  .hero{min-height:auto;padding:60px 0;}
+  .detail-info .model{font-size:32px;}
+  .cart-summary{position:static;}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== 导航 ===== -->
+<nav class="nav">
+  <a href="#/" class="nav-logo">
+    <img src="https://aka.doubaocdn.com/s/Lv2M29woXn" alt="LI-ELECTRIC" style="height:44px;width:auto;object-fit:contain;display:block;border-radius:4px;">
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="#/" data-route="home">Home</a>
+    <a href="#/products" data-route="products">Products</a>
+    <a href="#/cart" data-route="cart">Shop</a>
+    <a href="#/about" data-route="about">About</a>
+    <a href="#/contact" data-route="contact">Contact</a>
+  </div>
+  <a href="#/cart" class="nav-cart">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+    Cart
+    <span class="badge" id="cartBadge">0</span>
+  </a>
+  <button class="menu-btn" id="menuBtn" aria-label="Menu">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+</nav>
+
+<!-- ===== 首页 ===== -->
+<div class="view active" id="view-home">
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="hero-tag">JINHUA LI ELECTRIC TRADING CO., LTD</span>
+        <h1>Power Every Ride<br><span class="accent">&amp; Energy Storage</span></h1>
+        <p>Professional manufacturer of electric motorcycles, e-bicycles and LiFePO4 lithium batteries. From 1000W commuter scooters to 10KW high-speed e-motos, from 12V portable power to 614V industrial storage — one-stop wholesale supply for dealers worldwide.</p>
+        <div class="hero-actions">
+          <a href="#/products" class="btn btn-primary">Browse Products</a>
+          <a href="#/contact" class="btn btn-white-outline">Contact Sales</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="https://aka.doubaocdn.com/s/pp0IVtHmVd" alt="LI ELECTRIC Electric Motorcycle">
+      </div>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div class="container stats-grid">
+      <div class="stat-item"><div class="num">11+</div><div class="lbl">E-Motorcycle Models</div></div>
+      <div class="stat-item"><div class="num">3</div><div class="lbl">LiFePO4 Series</div></div>
+      <div class="stat-item"><div class="num">10KW</div><div class="lbl">Peak Motor Power</div></div>
+      <div class="stat-item"><div class="num">Global</div><div class="lbl">Export &amp; Wholesale</div></div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="eyebrow">Product Series</div>
+      <h2 style="font-size:32px;margin-bottom:8px;">Three Product Lines</h2>
+      <p style="color:var(--text2);font-size:14px;max-width:600px;">Covering electric two-wheel mobility and energy storage, with OEM / ODM customization and bulk purchasing support.</p>
+      <div class="series-grid">
+        <div class="series-card" onclick="location.hash='#/products?cat=moto'">
+          <div class="thumb"><img src="https://aka.doubaocdn.com/s/CfsTHrRRul" alt="Electric Motorcycles"></div>
+          <div class="body">
+            <h3>Electric Motorcycles</h3>
+            <p>9 Models · 1000W–10KW · Range 80–120km · LFP / NCM Battery</p>
+          </div>
+        </div>
+        <div class="series-card" onclick="location.hash='#/products?cat=bike'">
+          <div class="thumb"><img src="https://aka.doubaocdn.com/s/49JyQQnTU9" alt="Electric Bicycles"></div>
+          <div class="body">
+            <h3>Electric Bicycles</h3>
+            <p>2 Models · 500W–750W · 25–75 mi Range · Aluminum Frame</p>
+          </div>
+        </div>
+        <div class="series-card" onclick="location.hash='#/products?cat=battery'">
+          <div class="thumb"><img src="https://aka.doubaocdn.com/s/III3uZlgaB" alt="LiFePO4 Batteries"></div>
+          <div class="body">
+            <h3>LiFePO4 Batteries</h3>
+            <p>12/24/48V Portable · 614.4V Industrial · 50AH–280AH</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section advantages">
+    <div class="container">
+      <div class="eyebrow" style="color:#fff;">Why LI ELECTRIC</div>
+      <h2 style="font-size:32px;color:#fff;">Why Choose Us</h2>
+      <div class="adv-grid">
+        <div class="adv-item">
+          <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D0D0D" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+          <h4>In-House Production</h4>
+          <p>Integrated production of electric motors, lithium batteries and assembly lines, with a fully equipped laboratory for testing and R&amp;D.</p>
+        </div>
+        <div class="adv-item">
+          <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D0D0D" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h4>Quality Assurance</h4>
+          <p>All lithium batteries pass strict safety tests; CBS combined braking and hydraulic disc brakes; 100% pre-shipment inspection.</p>
+        </div>
+        <div class="adv-item">
+          <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D0D0D" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <h4>Global Export</h4>
+          <p>Products shipped to North America, South America, East Asia and South Asia; CBU / CKD / SKD shipping options available.</p>
+        </div>
+        <div class="adv-item">
+          <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D0D0D" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <h4>Wholesale Advantage</h4>
+          <p>Competitive pricing for motorcycle and battery dealers; OEM branding and custom packaging available for bulk orders.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== 产品中心 ===== -->
+<div class="view" id="view-products">
+  <section class="section">
+    <div class="container">
+      <div class="eyebrow">Products</div>
+      <h2 style="font-size:32px;margin-bottom:8px;">Product Center</h2>
+      <p style="color:var(--text2);font-size:14px;margin-bottom:24px;">Prices below are reference sample prices (USD). For bulk purchases, contact sales for dealer wholesale pricing.</p>
+      <div class="product-filters" id="productFilters">
+        <button class="filter-btn active" data-cat="all">All</button>
+        <button class="filter-btn" data-cat="moto">E-Motorcycles</button>
+        <button class="filter-btn" data-cat="bike">E-Bicycles</button>
+        <button class="filter-btn" data-cat="battery">Batteries</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== 产品详情 ===== -->
+<div class="view" id="view-detail">
+  <section class="section">
+    <div class="container">
+      <a href="#/products" style="font-size:13px;color:var(--text2);display:inline-flex;align-items:center;gap:4px;margin-bottom:24px;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Products
+      </a>
+      <div class="detail-layout" id="detailContent"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== 购物车 / 结算 ===== -->
+<div class="view" id="view-cart">
+  <section class="section">
+    <div class="container">
+      <div class="eyebrow">Shop &amp; Checkout</div>
+      <h2 style="font-size:32px;margin-bottom:32px;">Shopping Cart &amp; Checkout</h2>
+      <div class="cart-layout" id="cartLayout"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== 关于我们 ===== -->
+<div class="view" id="view-about">
+  <section class="section">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-text">
+          <div class="eyebrow">About Us</div>
+          <h2>Jinhua Li Electric Trading Co., Ltd</h2>
+          <p>Jinhua Li Electric Trading Co., Ltd is a leading manufacturer in the field of electric motors, lithium-ion batteries and energy storage products, with state-of-the-art production and assembly lines and a well-equipped laboratory for product testing and research.</p>
+          <p>We are committed to providing high-quality electric mobility and energy storage solutions for customers worldwide. Our product range includes electric motorcycles, electric bicycles and LiFePO4 lithium battery series, exported to North America, South America, East Asia, South Asia and beyond.</p>
+          <p>Located in Jindong District, Jinhua City, Zhejiang Province — adjacent to Yiwu International Trade City with convenient logistics — we support CBU / CKD / SKD shipping methods. Dealers worldwide are welcome to contact us for cooperation.</p>
+          <div style="margin-top:20px;">
+            <a href="#/contact" class="btn btn-primary">Contact Us</a>
+          </div>
+        </div>
+        <div class="about-img">
+          <img src="https://aka.doubaocdn.com/s/JQhhElv5bB" alt="LI ELECTRIC Company">
+        </div>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-item"><div class="cicon">OEM</div><div class="clbl">Branding</div></div>
+        <div class="cert-item"><div class="cicon">ODM</div><div class="clbl">R&amp;D</div></div>
+        <div class="cert-item"><div class="cicon">CKD</div><div class="clbl">Semi-Knocked</div></div>
+        <div class="cert-item"><div class="cicon">CBU</div><div class="clbl">Built-Up</div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== 联系我们 ===== -->
+<div class="view" id="view-contact">
+  <section class="section">
+    <div class="container">
+      <div class="eyebrow">Contact</div>
+      <h2 style="font-size:32px;margin-bottom:32px;">Contact Us</h2>
+      <div class="contact-layout">
+        <div class="contact-info">
+          <div class="contact-card">
+            <h4>Company Info</h4>
+            <p>Jinhua Li Electric Trading Co., Ltd</p>
+            <p>NO.183 4th floor, Jinou Road, Dongxiao Street, Jindong District, Jinhua City, Zhejiang, China</p>
+          </div>
+          <div class="contact-card">
+            <h4>Contact Info</h4>
+            <p>Contact: Kathy</p>
+            <p>Phone / WeChat: <a href="tel:+8618967973377">+86 189 6797 3377</a></p>
+            <p>WhatsApp: <a href="https://wa.me/8618967973377" target="_blank">+86 189 6797 3377</a></p>
+            <p>Tel: +86-579-82360077</p>
+            <p>Email: <a href="mailto:kathy@lielectric.cn">kathy@lielectric.cn</a></p>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h3>Send Inquiry</h3>
+          <form id="contactForm" onsubmit="submitContact(event)">
+            <div class="form-row">
+              <div><label>Name *</label><input type="text" id="cName" required placeholder="Your name"></div>
+              <div><label>Company</label><input type="text" id="cCompany" placeholder="Company name"></div>
+            </div>
+            <div class="form-row">
+              <div><label>Email *</label><input type="email" id="cEmail" required placeholder="your@email.com"></div>
+              <div><label>Phone / WhatsApp</label><input type="text" id="cPhone" placeholder="+86 ..."></div>
+            </div>
+            <label>Interested Products</label>
+            <select id="cProduct">
+              <option value="">Please select (mention multiple in message)</option>
+              <option>Electric Motorcycles</option>
+              <option>Electric Bicycles</option>
+              <option>LiFePO4 Batteries</option>
+              <option>All Products / Distribution</option>
+            </select>
+            <label>Message *</label>
+            <textarea id="cMsg" required placeholder="Please describe your purchasing needs, target quantity, target market, etc..."></textarea>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== 页脚 ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>LI-ELECTRIC</h4>
+        <p>Jinhua Li Electric Trading Co., Ltd</p>
+        <p style="margin-top:8px;">Power Every Ride &amp; Energy Storage</p>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <p><a href="#/products">Electric Motorcycles</a></p>
+        <p><a href="#/products">Electric Bicycles</a></p>
+        <p><a href="#/products">LiFePO4 Batteries</a></p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p><a href="#/">Home</a></p>
+        <p><a href="#/about">About Us</a></p>
+        <p><a href="#/contact">Contact</a></p>
+      </div>
+      <div>
+        <h4>Contact Sales</h4>
+        <p>Kathy: +86 189 6797 3377</p>
+        <p>WhatsApp: +86 189 6797 3377</p>
+        <p>kathy@lielectric.cn</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Jinhua Li Electric Trading Co., Ltd. All Rights Reserved. &nbsp;|&nbsp; lielectric.cn
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<!-- ===== PayPal SDK（client-id 请替换为你的真实商户 ID） ===== -->
+<script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD"></script>
+
+<script>
+/* ============================================================
+   LI ELECTRIC 官网 + 商城
+   ============================================================ */
+
+// ===== 产品数据（来自 2024 产品目录） =====
+var PRODUCTS = [
+  // --- E-Motorcycles ---
+  {id:'LWM02',cat:'moto',name:'VAIRO',images:['https://aka.doubaocdn.com/s/pp0IVtHmVd','https://aka.doubaocdn.com/s/x5orAzUVqA','https://aka.doubaocdn.com/s/Aj30FEPoYp','https://aka.doubaocdn.com/s/ZfwxLSKh2m','https://aka.doubaocdn.com/s/QohW7MlFed'],video:null,price:null,
+   motor:'2KW (PEAK 4KW)',battery:'72V 50AH LFP LiFePO4',speed:'80 km/h',range:'80-100 km',brake:'Front/Rear Disc 220mm',wheel:'14 inch',weight:'75 kg',desc:'Classic sport scooter design with long-range LFP battery, ideal for urban commuting and short-distance delivery.'},
+  {id:'LWM03',cat:'moto',name:'Aquarius',images:['https://aka.doubaocdn.com/s/CfsTHrRRul','https://aka.doubaocdn.com/s/H1UuUFr9DI','https://aka.doubaocdn.com/s/GYY5hiwmUe','https://aka.doubaocdn.com/s/yOVQidOdDO','https://aka.doubaocdn.com/s/EMUnWDl6Qq'],video:null,price:null,
+   motor:'3KW (PEAK 6KW) Hub Motor',battery:'72V 50AH LFP',speed:'85 km/h',range:'80-100 km',brake:'Disc 220mm CBS',wheel:'14 inch',weight:'85 kg',desc:'High-power hub motor with CBS combined braking, stable at high speed, suitable for long-distance riding.'},
+  {id:'LWM04PRO',cat:'moto',name:'BULL PRO',images:['https://aka.doubaocdn.com/s/rsbKK5RSxy','https://aka.doubaocdn.com/s/mfMFuiErS6','https://aka.doubaocdn.com/s/LvQ8Q27huR','https://aka.doubaocdn.com/s/rM9mwsEf5g','https://aka.doubaocdn.com/s/0lY0oXUr6x'],video:null,price:null,
+   motor:'5KW (PEAK 10KW)',battery:'72V 52AH NCM',speed:'80 km/h',range:'80-100 km',brake:'Disc 220mm CBS',wheel:'12 inch',weight:'75 kg',desc:'Flagship performance model with 10KW peak power, 7-inch TFT display, BYD fast charging supported.',extra:'7-inch TFT · BYD Fast Charge'},
+  {id:'LWM05',cat:'moto',name:'GEMINI',images:['https://aka.doubaocdn.com/s/PKSSXWy6zp','https://aka.doubaocdn.com/s/vV7WMTa8eH','https://aka.doubaocdn.com/s/lUVJsDcbi9','https://aka.doubaocdn.com/s/BCm8MazXUl','https://aka.doubaocdn.com/s/sVtAJ9orq6'],video:null,price:null,
+   motor:'2KW (PEAK 4KW)',battery:'72V 52AH NCM',speed:'60 km/h',range:'80-100 km',brake:'Disc 220mm',wheel:'10 inch',weight:'75 kg',desc:'Retro rounded design, compact and agile, lightweight NCM battery — top choice for city commuting.'},
+  {id:'LWM06S',cat:'moto',name:'HTX100S',images:['https://aka.doubaocdn.com/s/Uzgg2guZDH','https://aka.doubaocdn.com/s/8gVScUk8iS','https://aka.doubaocdn.com/s/q8oIvqI44V','https://aka.doubaocdn.com/s/q1SCKZfFmE','https://aka.doubaocdn.com/s/pXl3N85UAX'],video:null,price:null,
+   motor:'4.5KW (PEAK 9.6KW)',battery:'72V 40AHx2 Lithium',speed:'105 km/h',range:'80-100 km',brake:'Disc 220mm CBS',wheel:'F/R 100/80-14',weight:'75 kg',desc:'High-speed sport model with dual battery pack, 105km/h top speed, TFT display, run-flat tires.',extra:'TFT Display · Run-Flat Tires'},
+  {id:'LWM07',cat:'moto',name:'Pisces',images:['https://aka.doubaocdn.com/s/726FczOK0O','https://aka.doubaocdn.com/s/mVxZXk08kW','https://aka.doubaocdn.com/s/oY5EYGgDEJ','https://aka.doubaocdn.com/s/A4EBxHK4at','https://aka.doubaocdn.com/s/OR9PiTul4V'],video:null,price:null,
+   motor:'1000W Hub Motor',battery:'60V 20AH Lead-Acid',speed:'45 km/h',range:'80 km',brake:'Front Disc / Rear Drum',wheel:'10 inch',weight:'44 kg',desc:'Affordable entry model with low-cost lead-acid battery, lightweight and easy to handle for short commutes.'},
+  {id:'LWM08',cat:'moto',name:'Sagittarius',images:['https://aka.doubaocdn.com/s/dYKiUKYPyr','https://aka.doubaocdn.com/s/AJOaCK8vPz','https://aka.doubaocdn.com/s/VO7Pz6wUOv','https://aka.doubaocdn.com/s/6xJCczddcd','https://aka.doubaocdn.com/s/hQXNxPJUdu'],video:null,price:null,
+   motor:'1200W Hub Motor',battery:'60V 20AH Lead-Acid',speed:'50 km/h',range:'80 km',brake:'Front Disc / Rear Drum',wheel:'10 inch',weight:'60 kg',desc:'Practical cargo model with extended footboard space, durable and economical lead-acid battery for delivery and commuting.'},
+  // --- E-Bicycles ---
+  {id:'LWB01',cat:'bike',name:'LIBRA',images:['https://aka.doubaocdn.com/s/49JyQQnTU9','https://aka.doubaocdn.com/s/q6UKTVb2SD','https://aka.doubaocdn.com/s/ZHZAYbULfv','https://aka.doubaocdn.com/s/lfApBMBqQR','https://aka.doubaocdn.com/s/zFiZUVJCCf'],video:null,price:null,
+   motor:'48V 500W',battery:'48V 10AH',speed:'25 km/h',range:'25-50 km',brake:'XOD E500 Hydraulic Disc 180mm',wheel:'20x4.0 inch',weight:'24-28 kg',desc:'Fat-tire electric bicycle with AL6061 aluminum frame, Shimano gears, LCD 5-speed display.',extra:'Shimano TX50-7 · LCD Display'},
+  {id:'LWB02',cat:'bike',name:'Fat Tire E-Bike',images:['https://aka.doubaocdn.com/s/vXOexu0igW','https://aka.doubaocdn.com/s/nsc2mHmWQ7','https://aka.doubaocdn.com/s/t3hmhMVMUt','https://aka.doubaocdn.com/s/EnRHewiW4J','https://aka.doubaocdn.com/s/larSiV2YCR'],video:null,price:null,
+   motor:'48V 750W (Regenerative)',battery:'48V 25AH LG 21700',speed:'25 MPH',range:'75-140 mi',brake:'XOD E500 Hydraulic Disc 180mm',wheel:'20x4.0 inch',weight:'—',desc:'Long-range fat-tire e-bike with LG 21700 cells, regenerative braking, color TFT display, 5-level pedal assist.',extra:'LG 21700 Cells · Regen Braking · TFT Color'},
+  // --- Lithium Batteries ---
+  {id:'LW12100',cat:'battery',name:'LiFePO4 12V 100AH',images:['https://aka.doubaocdn.com/s/Ty3gTz9mFS','https://aka.doubaocdn.com/s/Pw6I7zbUf4','https://aka.doubaocdn.com/s/yE9ZDUsrM0','https://aka.doubaocdn.com/s/FN7W3myyJY','https://aka.doubaocdn.com/s/Zipz21T4VE'],video:null,price:null,
+   motor:'—',battery:'12.8V 100AH LiFePO4',speed:'—',range:'1280 Wh',brake:'BMS Protection',wheel:'—',weight:'13 kg',desc:'Deep-cycle LiFePO4 battery with built-in BMS, ideal for RVs, solar storage, fishing boats and golf carts.',extra:'BMS · 4000+ Cycles'},
+  {id:'LW12200',cat:'battery',name:'LiFePO4 12V 200AH',images:['https://aka.doubaocdn.com/s/u0oBR1muoW','https://aka.doubaocdn.com/s/zTvHCUkU8m','https://aka.doubaocdn.com/s/ekMnwE2VuC','https://aka.doubaocdn.com/s/ICUSVT8DRu','https://aka.doubaocdn.com/s/e9ufCV0NMS'],video:null,price:null,
+   motor:'—',battery:'12.8V 200AH LiFePO4',speed:'—',range:'2560 Wh',brake:'BMS Protection',wheel:'—',weight:'25 kg',desc:'High-capacity 12V LiFePO4 battery for solar systems, RVs, marine and off-grid applications.',extra:'BMS · 4000+ Cycles'},
+  {id:'LW24100',cat:'battery',name:'LiFePO4 24V 100AH',images:['https://aka.doubaocdn.com/s/qG8uk6lAs4','https://aka.doubaocdn.com/s/Xe8CjYfm6d','https://aka.doubaocdn.com/s/bUE6lwhzOS','https://aka.doubaocdn.com/s/ffIy4jPYxY','https://aka.doubaocdn.com/s/K2FpbXypB9'],video:'https://aka.doubaocdn.com/s/yUrw5dCqdU',price:null,
+   motor:'—',battery:'25.6V 100AH LiFePO4',speed:'—',range:'2560 Wh',brake:'BMS Protection',wheel:'—',weight:'14 kg',desc:'24V LiFePO4 battery for electric vehicles, solar storage and industrial applications.',extra:'BMS · 4000+ Cycles · Video'},
+  {id:'LW24280',cat:'battery',name:'LiFePO4 24V 280AH',images:['https://aka.doubaocdn.com/s/bGPHLyfovn','https://aka.doubaocdn.com/s/UxPU4HktNT','https://aka.doubaocdn.com/s/Hyq3zZPwg8','https://aka.doubaocdn.com/s/myziKsZSLO','https://aka.doubaocdn.com/s/7clNIz5Z4I'],video:null,price:null,
+   motor:'—',battery:'25.6V 280AH LiFePO4',speed:'—',range:'7168 Wh',brake:'BMS Protection',wheel:'—',weight:'32 kg',desc:'High-capacity 24V LiFePO4 battery for large solar systems and electric vehicles.',extra:'BMS · 4000+ Cycles'},
+  {id:'LW48200',cat:'battery',name:'LiFePO4 48V 200AH',images:['https://aka.doubaocdn.com/s/tbCpAj0o41','https://aka.doubaocdn.com/s/Wr3dvfuH77','https://aka.doubaocdn.com/s/vqX32oCNVK','https://aka.doubaocdn.com/s/Q8Acyqh0Jp','https://aka.doubaocdn.com/s/fZZoeL8HKV'],video:null,price:null,
+   motor:'—',battery:'51.2V 200AH LiFePO4',speed:'—',range:'10240 Wh',brake:'BMS Protection',wheel:'—',weight:'38 kg',desc:'Dedicated lithium battery for electric motorcycles / low-speed vehicles, 51.2V platform, safe and long-life LFP chemistry.',extra:'BMS · 4000+ Cycles'},
+  {id:'LW48280',cat:'battery',name:'LiFePO4 48V 280AH',images:['https://aka.doubaocdn.com/s/III3uZlgaB','https://aka.doubaocdn.com/s/kNPkCD2tu4','https://aka.doubaocdn.com/s/21ogdVdluf','https://aka.doubaocdn.com/s/zLdcVVsp1h','https://aka.doubaocdn.com/s/ODwr8g2m0K'],video:null,price:null,
+   motor:'—',battery:'51.2V 280AH LiFePO4',speed:'—',range:'14336 Wh',brake:'BMS Protection',wheel:'—',weight:'45 kg',desc:'High-capacity 48V LiFePO4 battery for electric vehicles, solar storage and industrial applications.',extra:'BMS · 4000+ Cycles'},
+  {id:'LW614200',cat:'battery',name:'614.4V 200AH Industrial ESS',images:['https://aka.doubaocdn.com/s/U6fS9CsWIi','https://aka.doubaocdn.com/s/5fpn9FtiRU','https://aka.doubaocdn.com/s/VM7rqQLVw1','https://aka.doubaocdn.com/s/nKxWjuELRh'],video:null,price:null,
+   motor:'—',battery:'614.4V 200AH LFP',speed:'—',range:'122.88 kWh',brake:'BMS + Thermal',wheel:'—',weight:'650 kg',desc:'Industrial high-voltage storage battery pack, 614.4V platform, for commercial & industrial storage and data center backup.',extra:'Inquire · C&I Storage'}
+];
+
+// ===== 购物车 =====
+var cart = JSON.parse(localStorage.getItem('li_cart') || '[]');
+
+function saveCart(){ localStorage.setItem('li_cart', JSON.stringify(cart)); updateBadge(); }
+function updateBadge(){
+  var n = cart.reduce(function(s,i){return s+i.qty;},0);
+  document.getElementById('cartBadge').textContent = n;
+}
+function addToCart(id, qty){
+  qty = qty || 1;
+  var p = PRODUCTS.find(function(x){return x.id===id;});
+  if(!p) return;
+  var exist = cart.find(function(i){return i.id===id;});
+  if(exist){ exist.qty += qty; } else { cart.push({id:id,qty:qty}); }
+  saveCart();
+  showToast('Added to cart: ' + p.id + ' ' + p.name);
+}
+function removeFromCart(id){
+  cart = cart.filter(function(i){return i.id!==id;});
+  saveCart(); renderCart();
+}
+function changeQty(id, delta){
+  var item = cart.find(function(i){return i.id===id;});
+  if(!item) return;
+  item.qty += delta;
+  if(item.qty <= 0){ removeFromCart(id); return; }
+  saveCart(); renderCart();
+}
+function cartTotal(){
+  return cart.reduce(function(s,i){
+    var p = PRODUCTS.find(function(x){return x.id===i.id;});
+    return s + (p && p.price ? p.price * i.qty : 0);
+  }, 0);
+}
+
+// ===== Toast =====
+var toastTimer;
+function showToast(msg){
+  var t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(function(){ t.classList.remove('show'); }, 2200);
+}
+
+// ===== 产品列表渲染 =====
+var currentFilter = 'all';
+function renderProducts(){
+  var grid = document.getElementById('productGrid');
+  var list = currentFilter === 'all' ? PRODUCTS : PRODUCTS.filter(function(p){return p.cat===currentFilter;});
+  var catLabel = {moto:'E-MOTO',bike:'E-BIKE',battery:'BATTERY'};
+  grid.innerHTML = list.map(function(p){
+    var imgSrc = (p.images && p.images.length > 0) ? p.images[0] : p.img;
+    return '<div class="product-card" onclick="location.hash=\'#/product/'+p.id+'\'">'+
+      '<div class="pimg"><span class="cat-tag">'+catLabel[p.cat]+'</span><img src="'+imgSrc+'" alt="'+p.id+'"></div>'+
+      '<div class="pbody">'+
+        '<div class="model">'+p.id+'</div>'+
+        '<div class="pname">'+p.name+'</div>'+
+        '<div class="specs"><span>'+p.motor+'</span><span>'+p.battery+'</span><span>Range '+p.range+'</span></div>'+
+        '<div class="pfoot">'+
+        '<button class="add-btn" onclick="event.stopPropagation();location.hash=\'#/contact\'">Inquire</button>'+
+        '</div>'+
+      '</div></div>';
+  }).join('');
+}
+
+// ===== 产品详情渲染 =====
+function renderDetail(id){
+  var p = PRODUCTS.find(function(x){return x.id===id;});
+  var el = document.getElementById('detailContent');
+  if(!p){ el.innerHTML = '<p>Product not found</p>'; return; }
+  var images = (p.images && p.images.length > 0) ? p.images : [p.img];
+  var mainSrc = images[0];
+  var thumbsHtml = images.map(function(src, idx){
+    return '<img src="'+src+'" class="gallery-thumb'+(idx===0?' active':'')+'" onclick="switchGallery('+idx+')" alt="View '+(idx+1)+'">';
+  }).join('');
+  if(p.video){
+    thumbsHtml += '<div class="gallery-thumb video-thumb" onclick="switchGalleryVideo()"><span style="font-size:24px;">&#9654;</span><span style="font-size:11px;">Video</span></div>';
+  }
+  var galleryHtml = '<div class="detail-gallery">'+
+    '<div class="gallery-main" id="galleryMain"><img src="'+mainSrc+'" alt="'+p.id+'" id="galleryMainImg"></div>'+
+    '<div class="gallery-thumbs">'+thumbsHtml+'</div>'+
+    '</div>';
+  window._currentProduct = {images: images, video: p.video || null};
+  el.innerHTML =
+    galleryHtml +
+    '<div class="detail-info">'+
+      '<div class="model">'+p.id+'</div>'+
+      '<div class="pname">'+p.name+'</div>'+
+      '<p style="font-size:14px;color:var(--text2);line-height:1.8;">'+p.desc+'</p>'+
+      '<table class="spec-table">'+
+        '<tr><td>Motor Power</td><td>'+p.motor+'</td></tr>'+
+        '<tr><td>Battery</td><td>'+p.battery+'</td></tr>'+
+        '<tr><td>Top Speed</td><td>'+p.speed+'</td></tr>'+
+        '<tr><td>Range</td><td>'+p.range+'</td></tr>'+
+        '<tr><td>Brakes</td><td>'+p.brake+'</td></tr>'+
+        '<tr><td>Wheel Size</td><td>'+p.wheel+'</td></tr>'+
+        '<tr><td>Weight</td><td>'+p.weight+'</td></tr>'+
+        (p.extra ? '<tr><td>Highlights</td><td>'+p.extra+'</td></tr>' : '')+
+      '</table>'+
+      '<a href="#/contact" class="btn btn-primary" style="margin-top:16px;">Contact Sales for Price</a>'+
+    '</div>';
+}
+function switchGallery(idx){
+  var cp = window._currentProduct;
+  if(!cp || !cp.images || !cp.images[idx]) return;
+  var main = document.getElementById('galleryMain');
+  if(main){ main.innerHTML = '<img src="'+cp.images[idx]+'" alt="Product view" id="galleryMainImg">'; }
+  var thumbs = document.querySelectorAll('.gallery-thumb');
+  thumbs.forEach(function(t, i){ t.classList.remove('active'); if(i===idx) t.classList.add('active'); });
+}
+function switchGalleryVideo(){
+  var cp = window._currentProduct;
+  if(!cp || !cp.video) return;
+  var main = document.getElementById('galleryMain');
+  if(main){ main.innerHTML = '<video src="'+cp.video+'" controls autoplay muted style="width:100%;height:100%;object-fit:contain;background:#000;"></video>'; }
+  var thumbs = document.querySelectorAll('.gallery-thumb');
+  thumbs.forEach(function(t){ t.classList.remove('active'); });
+}
+function detailQty(d){
+  var inp = document.getElementById('detailQty');
+  var v = Math.max(1, parseInt(inp.value) + d);
+  inp.value = v;
+}
+
+// ===== 购物车渲染 =====
+function renderCart(){
+  var el = document.getElementById('cartLayout');
+  if(cart.length === 0){
+    el.innerHTML = '<div class="cart-items"><div class="empty-cart">'+
+      '<svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>'+
+      '<h3 style="font-size:20px;margin-bottom:8px;">Your cart is empty</h3>'+
+      '<p style="font-size:14px;">Browse products to find your e-moto or battery</p>'+
+      '<a href="#/products" class="btn btn-primary" style="margin-top:20px;">Browse Products</a></div></div>'+
+      '<div class="cart-summary"><h3>Order Summary</h3><p style="font-size:13px;color:var(--text2);">No items yet</p></div>';
+    return;
+  }
+  var itemsHtml = cart.map(function(i){
+    var p = PRODUCTS.find(function(x){return x.id===i.id;});
+    if(!p) return '';
+    return '<div class="cart-item">'+
+      '<div class="cimg"><img src="'+((p.images&&p.images.length>0)?p.images[0]:p.img)+'" alt="'+p.id+'"></div>'+
+      '<div class="cinfo"><div class="cmodel">'+p.id+'</div><div class="cname">'+p.name+'</div>'+
+      '<div class="cprice">'+(p.price?'$'+p.price:'Inquire')+'</div></div>'+
+      '<div class="cright">'+
+        '<div class="qty-ctrl"><button onclick="changeQty(\''+p.id+'\',-1)">-</button><input value="'+i.qty+'" readonly style="width:36px;"><button onclick="changeQty(\''+p.id+'\',1)">+</button></div>'+
+        '<span class="remove-btn" onclick="removeFromCart(\''+p.id+'\')">Remove</span>'+
+      '</div></div>';
+  }).join('');
+
+  var total = cartTotal();
+  el.innerHTML =
+    '<div class="cart-items">'+itemsHtml+'</div>'+
+    '<div class="cart-summary">'+
+      '<h3>Order Summary</h3>'+
+      '<div class="sum-row"><span>Subtotal</span><span>Inquire</span></div>'+
+      '<div class="sum-row"><span>Shipping</span><span>TBD</span></div>'+
+      '<div class="sum-row total"><span>Total</span><span>Contact Sales</span></div>'+
+      '<div class="checkout-form">'+
+        '<label>Company *</label><input id="coCompany" placeholder="Company name">'+
+        '<label>Name *</label><input id="coName" placeholder="Your name">'+
+        '<label>Email *</label><input id="coEmail" type="email" placeholder="your@email.com">'+
+        '<label>Phone / WhatsApp</label><input id="coPhone" placeholder="+86 ...">'+
+        '<label>Shipping Address</label><input id="coAddr" placeholder="Country / City / Address">'+
+        '<label>Notes</label><textarea id="coNote" placeholder="Color preference, target quantity, shipping method (CBU/CKD), etc..."></textarea>'+
+      '</div>'+
+      '<div id="paypal-button-container"></div>'+
+      '<div class="paypal-notice">'+
+        '<strong>Payment:</strong> PayPal online payment is integrated (configure your PayPal Merchant Client ID in index.html).<br>'+
+        'If not configured, click "Submit Order" below — order details will be emailed to us, and we will contact you within 24 hours with bank transfer (T/T) details.<br>'+
+        'For large B2B orders, T/T bank transfer is recommended.'+
+      '</div>'+
+      '<button class="btn btn-dark" style="width:100%;justify-content:center;margin-top:12px;" onclick="submitOrder()">Submit Inquiry</button>'+
+    '</div>';
+
+  // 渲染 PayPal 按钮（如果已配置真实 client-id）
+  renderPayPal(total);
+}
+
+// ===== PayPal 支付集成 =====
+function renderPayPal(total){
+  var container = document.getElementById('paypal-button-container');
+  if(!container) return;
+  // 检测是否配置了真实的 PayPal Client ID
+  var scriptSrc = document.querySelector('script[src*="paypal.com/sdk/js"]');
+  var isConfigured = scriptSrc && scriptSrc.src.indexOf('YOUR_PAYPAL_CLIENT_ID') === -1;
+  if(typeof paypal === 'undefined' || !isConfigured){
+    container.innerHTML = '<div style="text-align:center;padding:14px;background:#f5f5f0;border-radius:6px;font-size:12px;color:var(--text2);">PayPal not configured<br><span style="font-size:11px;">Replace YOUR_PAYPAL_CLIENT_ID in index.html</span></div>';
+    return;
+  }
+  container.innerHTML = '';
+  try{
+    paypal.Buttons({
+      style:{layout:'vertical',color:'gold',shape:'rect',label:'paypal'},
+      createOrder:function(data, actions){
+        return actions.order.create({
+          purchase_units:[{amount:{value: total.toFixed(2), currency_code:'USD'}, description:'LI ELECTRIC Order'}]
+        });
+      },
+      onApprove:function(data, actions){
+        return actions.order.capture().then(function(details){
+          showToast('Payment successful! Order ID: ' + (details.id || '').slice(-8));
+          cart = []; saveCart(); renderCart();
+        });
+      },
+      onError:function(err){
+        showToast('Payment error, please retry or use bank transfer');
+      }
+    }).render('#paypal-button-container');
+  }catch(e){
+    container.innerHTML = '<div style="font-size:12px;color:var(--text2);">PayPal failed to load, please use bank transfer</div>';
+  }
+}
+
+// ===== 提交订单 =====
+function submitOrder(){
+  var name = document.getElementById('coName').value.trim();
+  var email = document.getElementById('coEmail').value.trim();
+  var company = document.getElementById('coCompany').value.trim();
+  if(!name || !email){ showToast('Please fill in name and email'); return; }
+  var orderLines = cart.map(function(i){
+    var p = PRODUCTS.find(function(x){return x.id===i.id;});
+    return p ? p.id+' '+p.name+' x'+i.qty+(p.price?' ($'+p.price*i.qty+')':'') : '';
+  }).join('\n');
+  var subject = encodeURIComponent('LI ELECTRIC Order - ' + (company || name));
+  var body = encodeURIComponent(
+    'Company: '+company+'\nName: '+name+'\nEmail: '+email+'\nPhone: '+(document.getElementById('coPhone').value||'')+
+    '\nAddress: '+(document.getElementById('coAddr').value||'')+'\nNotes: '+(document.getElementById('coNote').value||'')+
+    '\n\nOrder Details:\n'+orderLines+'\n\nTotal: $'+cartTotal().toFixed(2)+
+    '\n\nThis order was placed from lielectric.cn'
+  );
+  window.location.href = 'mailto:kathy@lielectric.cn?subject='+subject+'&body='+body;
+  showToast('Opening email client to send order...');
+}
+
+// ===== 联系表单 =====
+function submitContact(e){
+  e.preventDefault();
+  var name = document.getElementById('cName').value.trim();
+  var email = document.getElementById('cEmail').value.trim();
+  if(!name || !email){ showToast('Please fill in name and email'); return; }
+  var subject = encodeURIComponent('LI ELECTRIC Inquiry - ' + name);
+  var body = encodeURIComponent(
+    'Name: '+name+'\nCompany: '+(document.getElementById('cCompany').value||'')+
+    '\nEmail: '+email+'\nPhone: '+(document.getElementById('cPhone').value||'')+
+    '\nInterested Products: '+(document.getElementById('cProduct').value||'')+
+    '\n\nMessage:\n'+document.getElementById('cMsg').value
+  );
+  window.location.href = 'mailto:kathy@lielectric.cn?subject='+subject+'&body='+body;
+  showToast('Opening email client to send inquiry...');
+}
+
+// ===== 路由 =====
+function router(){
+  var hash = location.hash || '#/';
+  var views = document.querySelectorAll('.view');
+  views.forEach(function(v){ v.classList.remove('active'); });
+  document.querySelectorAll('.nav-links a').forEach(function(a){ a.classList.remove('active'); });
+
+  var route = 'home';
+  if(hash.indexOf('#/products') === 0) route = 'products';
+  else if(hash.indexOf('#/product/') === 0) route = 'detail';
+  else if(hash.indexOf('#/cart') === 0) route = 'cart';
+  else if(hash.indexOf('#/about') === 0) route = 'about';
+  else if(hash.indexOf('#/contact') === 0) route = 'contact';
+
+  if(route === 'products'){
+    document.getElementById('view-products').classList.add('active');
+    document.querySelector('.nav-links a[data-route="products"]').classList.add('active');
+    var m = hash.match(/cat=(\w+)/);
+    if(m){ currentFilter = m[1]; syncFilters(); }
+    renderProducts();
+  } else if(route === 'detail'){
+    document.getElementById('view-detail').classList.add('active');
+    var id = hash.replace('#/product/','');
+    renderDetail(id);
+  } else if(route === 'cart'){
+    document.getElementById('view-cart').classList.add('active');
+    document.querySelector('.nav-links a[data-route="cart"]').classList.add('active');
+    renderCart();
+  } else if(route === 'about'){
+    document.getElementById('view-about').classList.add('active');
+    document.querySelector('.nav-links a[data-route="about"]').classList.add('active');
+  } else if(route === 'contact'){
+    document.getElementById('view-contact').classList.add('active');
+    document.querySelector('.nav-links a[data-route="contact"]').classList.add('active');
+  } else {
+    document.getElementById('view-home').classList.add('active');
+    document.querySelector('.nav-links a[data-route="home"]').classList.add('active');
+  }
+  window.scrollTo(0,0);
+  document.getElementById('navLinks').classList.remove('open');
+}
+
+function syncFilters(){
+  document.querySelectorAll('.filter-btn').forEach(function(b){
+    b.classList.toggle('active', b.dataset.cat === currentFilter);
+  });
+}
+
+// ===== 事件绑定 =====
+document.getElementById('productFilters').addEventListener('click', function(e){
+  var btn = e.target.closest('.filter-btn');
+  if(!btn) return;
+  currentFilter = btn.dataset.cat;
+  syncFilters();
+  renderProducts();
+});
+document.getElementById('menuBtn').addEventListener('click', function(){
+  document.getElementById('navLinks').classList.toggle('open');
+});
+window.addEventListener('hashchange', router);
+
+// ===== 初始化 =====
+updateBadge();
+router();
+</script>
+</body>
+</html>

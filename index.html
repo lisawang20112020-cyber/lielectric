@@ -243,6 +243,16 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:.02em;}
 .lightbox img{max-width:90vw;max-height:85vh;object-fit:contain;border-radius:4px;}
 .lightbox-close{position:absolute;top:20px;right:30px;color:#fff;font-size:36px;cursor:pointer;font-weight:300;}
 
+
+.bank-info{background:#fafafa;border:1px solid var(--border);border-radius:8px;padding:16px;margin:16px 0;}
+.bank-info h4{font-size:15px;margin-bottom:12px;font-family:var(--display);display:flex;align-items:center;gap:8px;}
+.bank-info .bank-row{display:flex;justify-content:space-between;padding:6px 0;font-size:13px;border-bottom:1px dashed #e0e0e0;}
+.bank-info .bank-row:last-child{border-bottom:none;}
+.bank-info .bank-label{color:var(--text2);min-width:140px;}
+.bank-info .bank-value{font-weight:600;text-align:right;word-break:break-all;}
+.bank-info .bank-note{font-size:11px;color:#999;margin-top:10px;font-style:italic;}
+.bank-info .currency-tag{display:inline-block;background:var(--black);color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;margin-right:6px;}
+
 </style>
 </head>
 <body>
@@ -766,12 +776,22 @@ function renderCart(){
         '<label>Notes</label><textarea id="coNote" placeholder="Color preference, target quantity, shipping method (CBU/CKD), etc..."></textarea>'+
       '</div>'+
       '<div id="paypal-button-container"></div>'+
-      '<div class="paypal-notice">'+
-        '<strong>Payment:</strong> PayPal online payment is integrated (configure your PayPal Merchant Client ID in index.html).<br>'+
-        'If not configured, click "Submit Order" below — order details will be emailed to us, and we will contact you within 24 hours with bank transfer (T/T) details.<br>'+
-        'For large B2B orders, T/T bank transfer is recommended.'+
+      '<div class="bank-info">'+
+        '<h4>&#127974; Bank Transfer (T/T) Details</h4>'+
+        '<div class="bank-row"><span class="bank-label">Beneficiary Name</span><span class="bank-value">JINHUA LI ELECTRIC TRADING CO., LTD</span></div>'+
+        '<div class="bank-row"><span class="bank-label">Beneficiary Bank</span><span class="bank-value">BANK OF CHINA JINHUA BRANCH, JINDONG SUB-BRANCH</span></div>'+
+        '<div class="bank-row"><span class="bank-label">Bank Address</span><span class="bank-value">ROOM 102 No.99 Binhong East Road, Jinhua, Zhejiang, China</span></div>'+
+        '<div class="bank-row"><span class="bank-label">SWIFT Code</span><span class="bank-value">BKCHCNBJ92H</span></div>'+
+        '<div class="bank-row"><span class="bank-label"><span class="currency-tag">USD</span>Account No.</span><span class="bank-value">392284749260</span></div>'+
+        '<div class="bank-row"><span class="bank-label"><span class="currency-tag">EUR</span>Account No.</span><span class="bank-value">390984762597</span></div>'+
+        '<div class="bank-row"><span class="bank-label">Beneficiary Address</span><span class="bank-value">NO.183 4th floor, Jinou Road, Dongxiao Street, Jindong District, Jinhua, Zhejiang, China</span></div>'+
+        '<p class="bank-note">* Please note payment purpose (e.g. "Order for LWM02 x 10") when transferring.</p>'+
       '</div>'+
-      '<button class="btn btn-dark" style="width:100%;justify-content:center;margin-top:12px;" onclick="submitOrder()">Submit Order (Bank Transfer)</button>'+
+      '<div class="paypal-notice">'+
+        '<strong>How to order:</strong> Click "Submit Order" below — order details will be emailed to us. We will confirm stock and shipping cost within 24 hours. Then you can make T/T bank transfer using the details above.<br>'+
+        'For large B2B orders, T/T bank transfer is recommended. PayPal payment also available upon request.'+
+      '</div>'+
+      '<button class="btn btn-dark" style="width:100%;justify-content:center;margin-top:12px;" onclick="submitOrder()">Submit Order</button>'+
     '</div>';
 
   // 渲染 PayPal 按钮（如果已配置真实 client-id）

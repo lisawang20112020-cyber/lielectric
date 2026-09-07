@@ -552,9 +552,6 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:.02em;}
 
 <div class="toast" id="toast"></div>
 
-<!-- ===== PayPal SDK（client-id 请替换为你的真实商户 ID） ===== -->
-<script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD"></script>
-
 <script>
 /* ============================================================
    LI ELECTRIC 官网 + 商城
@@ -583,17 +580,17 @@ var PRODUCTS = [
   {id:'LWB02',cat:'bike',name:'Fat Tire E-Bike',images:['https://aka.doubaocdn.com/s/vXOexu0igW','https://aka.doubaocdn.com/s/nsc2mHmWQ7','https://aka.doubaocdn.com/s/t3hmhMVMUt','https://aka.doubaocdn.com/s/EnRHewiW4J','https://aka.doubaocdn.com/s/larSiV2YCR'],video:null,price:2900,
    motor:'48V 750W (Regenerative)',battery:'48V 25AH LG 21700',speed:'25 MPH',range:'75-140 mi',brake:'XOD E500 Hydraulic Disc 180mm',wheel:'20x4.0 inch',weight:'—',desc:'Long-range fat-tire e-bike with LG 21700 cells, regenerative braking, color TFT display, 5-level pedal assist.',extra:'LG 21700 Cells · Regen Braking · TFT Color'},
   // --- Lithium Batteries ---
-  {id:'LW12100',cat:'battery',name:'LiFePO4 12V 100AH',images:['https://aka.doubaocdn.com/s/Ty3gTz9mFS','https://aka.doubaocdn.com/s/Pw6I7zbUf4','https://aka.doubaocdn.com/s/yE9ZDUsrM0','https://aka.doubaocdn.com/s/FN7W3myyJY','https://aka.doubaocdn.com/s/Zipz21T4VE'],video:null,price:300.86,
+  {id:'LW12100',cat:'battery',name:'LiFePO4 12V 100AH',images:['https://aka.doubaocdn.com/s/SNcNUTqk9E','https://aka.doubaocdn.com/s/Pw6I7zbUf4','https://aka.doubaocdn.com/s/yE9ZDUsrM0','https://aka.doubaocdn.com/s/FN7W3myyJY','https://aka.doubaocdn.com/s/Zipz21T4VE'],video:null,price:300.86,
    motor:'—',battery:'12.8V 100AH LiFePO4',speed:'—',range:'1280 Wh',brake:'BMS Protection',wheel:'—',weight:'13 kg',desc:'Deep-cycle LiFePO4 battery with built-in BMS, ideal for RVs, solar storage, fishing boats and golf carts.',extra:'BMS · 4000+ Cycles'},
-  {id:'LW12200',cat:'battery',name:'LiFePO4 12V 200AH',images:['https://aka.doubaocdn.com/s/u0oBR1muoW','https://aka.doubaocdn.com/s/zTvHCUkU8m','https://aka.doubaocdn.com/s/ekMnwE2VuC','https://aka.doubaocdn.com/s/ICUSVT8DRu','https://aka.doubaocdn.com/s/e9ufCV0NMS'],video:null,price:696.86,
+  {id:'LW12200',cat:'battery',name:'LiFePO4 12V 200AH',images:['https://aka.doubaocdn.com/s/9oPQX2zrKh','https://aka.doubaocdn.com/s/VBXWaf5s6i','https://aka.doubaocdn.com/s/ekMnwE2VuC','https://aka.doubaocdn.com/s/ICUSVT8DRu','https://aka.doubaocdn.com/s/e9ufCV0NMS'],video:null,price:696.86,
    motor:'—',battery:'12.8V 200AH LiFePO4',speed:'—',range:'2560 Wh',brake:'BMS Protection',wheel:'—',weight:'25 kg',desc:'High-capacity 12V LiFePO4 battery for solar systems, RVs, marine and off-grid applications.',extra:'BMS · 4000+ Cycles'},
-  {id:'LW24100',cat:'battery',name:'LiFePO4 24V 100AH',images:['https://aka.doubaocdn.com/s/qG8uk6lAs4','https://aka.doubaocdn.com/s/Xe8CjYfm6d','https://aka.doubaocdn.com/s/bUE6lwhzOS','https://aka.doubaocdn.com/s/ffIy4jPYxY','https://aka.doubaocdn.com/s/K2FpbXypB9'],video:'https://aka.doubaocdn.com/s/yUrw5dCqdU',price:547.14,
+  {id:'LW24100',cat:'battery',name:'LiFePO4 24V 100AH',images:['https://aka.doubaocdn.com/s/Un89qRNryt','https://aka.doubaocdn.com/s/Xe8CjYfm6d','https://aka.doubaocdn.com/s/bUE6lwhzOS','https://aka.doubaocdn.com/s/ffIy4jPYxY','https://aka.doubaocdn.com/s/K2FpbXypB9'],video:'https://aka.doubaocdn.com/s/yUrw5dCqdU',price:547.14,
    motor:'—',battery:'25.6V 100AH LiFePO4',speed:'—',range:'2560 Wh',brake:'BMS Protection',wheel:'—',weight:'14 kg',desc:'24V LiFePO4 battery for electric vehicles, solar storage and industrial applications.',extra:'BMS · 4000+ Cycles · Video'},
-  {id:'LW24280',cat:'battery',name:'LiFePO4 24V 280AH',images:['https://aka.doubaocdn.com/s/bGPHLyfovn','https://aka.doubaocdn.com/s/UxPU4HktNT','https://aka.doubaocdn.com/s/Hyq3zZPwg8','https://aka.doubaocdn.com/s/myziKsZSLO','https://aka.doubaocdn.com/s/7clNIz5Z4I'],video:null,price:1177.78,
+  {id:'LW24280',cat:'battery',name:'LiFePO4 24V 280AH',images:['https://aka.doubaocdn.com/s/LgsgDgSMSi','https://aka.doubaocdn.com/s/UxPU4HktNT','https://aka.doubaocdn.com/s/Hyq3zZPwg8','https://aka.doubaocdn.com/s/myziKsZSLO','https://aka.doubaocdn.com/s/7clNIz5Z4I'],video:null,price:1177.78,
    motor:'—',battery:'25.6V 280AH LiFePO4',speed:'—',range:'7168 Wh',brake:'BMS Protection',wheel:'—',weight:'32 kg',desc:'High-capacity 24V LiFePO4 battery for large solar systems and electric vehicles.',extra:'BMS · 4000+ Cycles'},
-  {id:'LW48200',cat:'battery',name:'LiFePO4 48V 200AH',images:['https://aka.doubaocdn.com/s/tbCpAj0o41','https://aka.doubaocdn.com/s/Wr3dvfuH77','https://aka.doubaocdn.com/s/vqX32oCNVK','https://aka.doubaocdn.com/s/Q8Acyqh0Jp','https://aka.doubaocdn.com/s/fZZoeL8HKV'],video:null,price:2272.57,
+  {id:'LW48200',cat:'battery',name:'LiFePO4 48V 200AH',images:['https://aka.doubaocdn.com/s/R4oAuCaLHZ','https://aka.doubaocdn.com/s/Wr3dvfuH77','https://aka.doubaocdn.com/s/vqX32oCNVK','https://aka.doubaocdn.com/s/Q8Acyqh0Jp','https://aka.doubaocdn.com/s/fZZoeL8HKV'],video:null,price:2272.57,
    motor:'—',battery:'51.2V 200AH LiFePO4',speed:'—',range:'10240 Wh',brake:'BMS Protection',wheel:'—',weight:'38 kg',desc:'Dedicated lithium battery for electric motorcycles / low-speed vehicles, 51.2V platform, safe and long-life LFP chemistry.',extra:'BMS · 4000+ Cycles'},
-  {id:'LW48280',cat:'battery',name:'LiFePO4 48V 280AH',images:['https://aka.doubaocdn.com/s/III3uZlgaB','https://aka.doubaocdn.com/s/kNPkCD2tu4','https://aka.doubaocdn.com/s/21ogdVdluf','https://aka.doubaocdn.com/s/zLdcVVsp1h','https://aka.doubaocdn.com/s/ODwr8g2m0K'],video:null,price:2240.86,
+  {id:'LW48280',cat:'battery',name:'LiFePO4 48V 280AH',images:['https://aka.doubaocdn.com/s/UWV0doPOZH','https://aka.doubaocdn.com/s/kNPkCD2tu4','https://aka.doubaocdn.com/s/21ogdVdluf','https://aka.doubaocdn.com/s/zLdcVVsp1h','https://aka.doubaocdn.com/s/ODwr8g2m0K'],video:null,price:2240.86,
    motor:'—',battery:'51.2V 280AH LiFePO4',speed:'—',range:'14336 Wh',brake:'BMS Protection',wheel:'—',weight:'45 kg',desc:'High-capacity 48V LiFePO4 battery for electric vehicles, solar storage and industrial applications.',extra:'BMS · 4000+ Cycles'},
   {id:'LW614200',cat:'battery',name:'614.4V 200AH Industrial ESS',images:['https://aka.doubaocdn.com/s/U6fS9CsWIi','https://aka.doubaocdn.com/s/5fpn9FtiRU','https://aka.doubaocdn.com/s/VM7rqQLVw1','https://aka.doubaocdn.com/s/nKxWjuELRh'],video:null,price:null,
    motor:'—',battery:'614.4V 200AH LFP',speed:'—',range:'122.88 kWh',brake:'BMS + Thermal',wheel:'—',weight:'650 kg',desc:'Industrial high-voltage storage battery pack, 614.4V platform, for commercial & industrial storage and data center backup.',extra:'Inquire · C&I Storage'}
@@ -775,7 +772,6 @@ function renderCart(){
         '<label>Shipping Address</label><input id="coAddr" placeholder="Country / City / Address">'+
         '<label>Notes</label><textarea id="coNote" placeholder="Color preference, target quantity, shipping method (CBU/CKD), etc..."></textarea>'+
       '</div>'+
-      '<div id="paypal-button-container"></div>'+
       '<div class="bank-info">'+
         '<h4>&#127974; Bank Transfer (T/T) Details</h4>'+
         '<div class="bank-row"><span class="bank-label">Beneficiary Name</span><span class="bank-value">JINHUA LI ELECTRIC TRADING CO., LTD</span></div>'+
@@ -789,48 +785,11 @@ function renderCart(){
       '</div>'+
       '<div class="paypal-notice">'+
         '<strong>How to order:</strong> Click "Submit Order" below — order details will be emailed to us. We will confirm stock and shipping cost within 24 hours. Then you can make T/T bank transfer using the details above.<br>'+
-        'For large B2B orders, T/T bank transfer is recommended. PayPal payment also available upon request.'+
+        'For large B2B orders, T/T bank transfer is recommended.'+
       '</div>'+
       '<button class="btn btn-dark" style="width:100%;justify-content:center;margin-top:12px;" onclick="submitOrder()">Submit Order</button>'+
     '</div>';
 
-  // 渲染 PayPal 按钮（如果已配置真实 client-id）
-  renderPayPal(total);
-}
-
-// ===== PayPal 支付集成 =====
-function renderPayPal(total){
-  var container = document.getElementById('paypal-button-container');
-  if(!container) return;
-  // 检测是否配置了真实的 PayPal Client ID
-  var scriptSrc = document.querySelector('script[src*="paypal.com/sdk/js"]');
-  var isConfigured = scriptSrc && scriptSrc.src.indexOf('YOUR_PAYPAL_CLIENT_ID') === -1;
-  if(typeof paypal === 'undefined' || !isConfigured){
-    container.innerHTML = '<div style="text-align:center;padding:14px;background:#f5f5f0;border-radius:6px;font-size:12px;color:var(--text2);">PayPal not configured<br><span style="font-size:11px;">Replace YOUR_PAYPAL_CLIENT_ID in index.html</span></div>';
-    return;
-  }
-  container.innerHTML = '';
-  try{
-    paypal.Buttons({
-      style:{layout:'vertical',color:'gold',shape:'rect',label:'paypal'},
-      createOrder:function(data, actions){
-        return actions.order.create({
-          purchase_units:[{amount:{value: total.toFixed(2), currency_code:'USD'}, description:'LI ELECTRIC Order'}]
-        });
-      },
-      onApprove:function(data, actions){
-        return actions.order.capture().then(function(details){
-          showToast('Payment successful! Order ID: ' + (details.id || '').slice(-8));
-          cart = []; saveCart(); renderCart();
-        });
-      },
-      onError:function(err){
-        showToast('Payment error, please retry or use bank transfer');
-      }
-    }).render('#paypal-button-container');
-  }catch(e){
-    container.innerHTML = '<div style="font-size:12px;color:var(--text2);">PayPal failed to load, please use bank transfer</div>';
-  }
 }
 
 // ===== 提交订单 =====

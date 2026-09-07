@@ -253,6 +253,12 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:.02em;}
 .bank-info .bank-note{font-size:11px;color:#999;margin-top:10px;font-style:italic;}
 .bank-info .currency-tag{display:inline-block;background:var(--black);color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;margin-right:6px;}
 
+
+.video-section{padding:60px 0;background:#fafafa;}
+.video-wrap{max-width:900px;margin:0 auto;position:relative;}
+.video-wrap video{width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,.12);display:block;background:#000;}
+.video-caption{text-align:center;margin-top:16px;font-size:14px;color:var(--text2);}
+
 </style>
 </head>
 <body>
@@ -335,6 +341,21 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:.02em;}
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section video-section">
+    <div class="container">
+      <div class="eyebrow">Product Video</div>
+      <h2 style="font-size:32px;margin-bottom:8px;">LiFePO4 Lithium Battery Introduction</h2>
+      <p style="color:var(--text2);font-size:14px;max-width:600px;margin-bottom:24px;">Watch our LiFePO4 lithium battery production and product showcase — built for electric mobility, solar storage and industrial applications.</p>
+      <div class="video-wrap">
+        <video controls preload="metadata" playsinline>
+          <source src="https://aka.doubaocdn.com/s/JBhvZSU0C1" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <p class="video-caption">LiFePO4 Battery Series &middot; 12V / 24V / 48V / 614.4V &middot; OEM &amp; ODM Supported</p>
     </div>
   </section>
 
@@ -580,19 +601,19 @@ var PRODUCTS = [
   {id:'LWB02',cat:'bike',name:'Fat Tire E-Bike',images:['https://aka.doubaocdn.com/s/vXOexu0igW','https://aka.doubaocdn.com/s/nsc2mHmWQ7','https://aka.doubaocdn.com/s/t3hmhMVMUt','https://aka.doubaocdn.com/s/EnRHewiW4J','https://aka.doubaocdn.com/s/larSiV2YCR'],video:null,price:2900,
    motor:'48V 750W (Regenerative)',battery:'48V 25AH LG 21700',speed:'25 MPH',range:'75-140 mi',brake:'XOD E500 Hydraulic Disc 180mm',wheel:'20x4.0 inch',weight:'—',desc:'Long-range fat-tire e-bike with LG 21700 cells, regenerative braking, color TFT display, 5-level pedal assist.',extra:'LG 21700 Cells · Regen Braking · TFT Color'},
   // --- Lithium Batteries ---
-  {id:'LW12100',cat:'battery',name:'LiFePO4 12V 100AH',images:['https://aka.doubaocdn.com/s/SNcNUTqk9E','https://aka.doubaocdn.com/s/Pw6I7zbUf4','https://aka.doubaocdn.com/s/yE9ZDUsrM0','https://aka.doubaocdn.com/s/FN7W3myyJY','https://aka.doubaocdn.com/s/Zipz21T4VE'],video:null,price:300.86,
+  {id:'LW12100',cat:'battery',name:'LiFePO4 12V 100AH',images:['https://aka.doubaocdn.com/s/SNcNUTqk9E','https://aka.doubaocdn.com/s/Pw6I7zbUf4','https://aka.doubaocdn.com/s/yE9ZDUsrM0','https://aka.doubaocdn.com/s/FN7W3myyJY','https://aka.doubaocdn.com/s/Zipz21T4VE'],video:'https://aka.doubaocdn.com/s/JBhvZSU0C1',price:300.86,
    motor:'—',battery:'12.8V 100AH LiFePO4',speed:'—',range:'1280 Wh',brake:'BMS Protection',wheel:'—',weight:'13 kg',desc:'Deep-cycle LiFePO4 battery with built-in BMS, ideal for RVs, solar storage, fishing boats and golf carts.',extra:'BMS · 4000+ Cycles'},
-  {id:'LW12200',cat:'battery',name:'LiFePO4 12V 200AH',images:['https://aka.doubaocdn.com/s/9oPQX2zrKh','https://aka.doubaocdn.com/s/VBXWaf5s6i','https://aka.doubaocdn.com/s/ekMnwE2VuC','https://aka.doubaocdn.com/s/ICUSVT8DRu','https://aka.doubaocdn.com/s/e9ufCV0NMS'],video:null,price:696.86,
+  {id:'LW12200',cat:'battery',name:'LiFePO4 12V 200AH',images:['https://aka.doubaocdn.com/s/9oPQX2zrKh','https://aka.doubaocdn.com/s/VBXWaf5s6i','https://aka.doubaocdn.com/s/ekMnwE2VuC','https://aka.doubaocdn.com/s/ICUSVT8DRu','https://aka.doubaocdn.com/s/e9ufCV0NMS'],video:'https://aka.doubaocdn.com/s/JBhvZSU0C1',price:696.86,
    motor:'—',battery:'12.8V 200AH LiFePO4',speed:'—',range:'2560 Wh',brake:'BMS Protection',wheel:'—',weight:'25 kg',desc:'High-capacity 12V LiFePO4 battery for solar systems, RVs, marine and off-grid applications.',extra:'BMS · 4000+ Cycles'},
   {id:'LW24100',cat:'battery',name:'LiFePO4 24V 100AH',images:['https://aka.doubaocdn.com/s/Un89qRNryt','https://aka.doubaocdn.com/s/Xe8CjYfm6d','https://aka.doubaocdn.com/s/bUE6lwhzOS','https://aka.doubaocdn.com/s/ffIy4jPYxY','https://aka.doubaocdn.com/s/K2FpbXypB9'],video:'https://aka.doubaocdn.com/s/yUrw5dCqdU',price:547.14,
    motor:'—',battery:'25.6V 100AH LiFePO4',speed:'—',range:'2560 Wh',brake:'BMS Protection',wheel:'—',weight:'14 kg',desc:'24V LiFePO4 battery for electric vehicles, solar storage and industrial applications.',extra:'BMS · 4000+ Cycles · Video'},
-  {id:'LW24280',cat:'battery',name:'LiFePO4 24V 280AH',images:['https://aka.doubaocdn.com/s/LgsgDgSMSi','https://aka.doubaocdn.com/s/UxPU4HktNT','https://aka.doubaocdn.com/s/Hyq3zZPwg8','https://aka.doubaocdn.com/s/myziKsZSLO','https://aka.doubaocdn.com/s/7clNIz5Z4I'],video:null,price:1177.78,
+  {id:'LW24280',cat:'battery',name:'LiFePO4 24V 280AH',images:['https://aka.doubaocdn.com/s/LgsgDgSMSi','https://aka.doubaocdn.com/s/UxPU4HktNT','https://aka.doubaocdn.com/s/Hyq3zZPwg8','https://aka.doubaocdn.com/s/myziKsZSLO','https://aka.doubaocdn.com/s/7clNIz5Z4I'],video:'https://aka.doubaocdn.com/s/JBhvZSU0C1',price:1177.78,
    motor:'—',battery:'25.6V 280AH LiFePO4',speed:'—',range:'7168 Wh',brake:'BMS Protection',wheel:'—',weight:'32 kg',desc:'High-capacity 24V LiFePO4 battery for large solar systems and electric vehicles.',extra:'BMS · 4000+ Cycles'},
-  {id:'LW48200',cat:'battery',name:'LiFePO4 48V 200AH',images:['https://aka.doubaocdn.com/s/R4oAuCaLHZ','https://aka.doubaocdn.com/s/Wr3dvfuH77','https://aka.doubaocdn.com/s/vqX32oCNVK','https://aka.doubaocdn.com/s/Q8Acyqh0Jp','https://aka.doubaocdn.com/s/fZZoeL8HKV'],video:null,price:2272.57,
+  {id:'LW48200',cat:'battery',name:'LiFePO4 48V 200AH',images:['https://aka.doubaocdn.com/s/R4oAuCaLHZ','https://aka.doubaocdn.com/s/Wr3dvfuH77','https://aka.doubaocdn.com/s/vqX32oCNVK','https://aka.doubaocdn.com/s/Q8Acyqh0Jp','https://aka.doubaocdn.com/s/fZZoeL8HKV'],video:'https://aka.doubaocdn.com/s/JBhvZSU0C1',price:2272.57,
    motor:'—',battery:'51.2V 200AH LiFePO4',speed:'—',range:'10240 Wh',brake:'BMS Protection',wheel:'—',weight:'38 kg',desc:'Dedicated lithium battery for electric motorcycles / low-speed vehicles, 51.2V platform, safe and long-life LFP chemistry.',extra:'BMS · 4000+ Cycles'},
-  {id:'LW48280',cat:'battery',name:'LiFePO4 48V 280AH',images:['https://aka.doubaocdn.com/s/UWV0doPOZH','https://aka.doubaocdn.com/s/kNPkCD2tu4','https://aka.doubaocdn.com/s/21ogdVdluf','https://aka.doubaocdn.com/s/zLdcVVsp1h','https://aka.doubaocdn.com/s/ODwr8g2m0K'],video:null,price:2240.86,
+  {id:'LW48280',cat:'battery',name:'LiFePO4 48V 280AH',images:['https://aka.doubaocdn.com/s/UWV0doPOZH','https://aka.doubaocdn.com/s/kNPkCD2tu4','https://aka.doubaocdn.com/s/21ogdVdluf','https://aka.doubaocdn.com/s/zLdcVVsp1h','https://aka.doubaocdn.com/s/ODwr8g2m0K'],video:'https://aka.doubaocdn.com/s/JBhvZSU0C1',price:2240.86,
    motor:'—',battery:'51.2V 280AH LiFePO4',speed:'—',range:'14336 Wh',brake:'BMS Protection',wheel:'—',weight:'45 kg',desc:'High-capacity 48V LiFePO4 battery for electric vehicles, solar storage and industrial applications.',extra:'BMS · 4000+ Cycles'},
-  {id:'LW614200',cat:'battery',name:'614.4V 200AH Industrial ESS',images:['https://aka.doubaocdn.com/s/U6fS9CsWIi','https://aka.doubaocdn.com/s/5fpn9FtiRU','https://aka.doubaocdn.com/s/VM7rqQLVw1','https://aka.doubaocdn.com/s/nKxWjuELRh'],video:null,price:null,
+  {id:'LW614200',cat:'battery',name:'614.4V 200AH Industrial ESS',images:['https://aka.doubaocdn.com/s/U6fS9CsWIi','https://aka.doubaocdn.com/s/5fpn9FtiRU','https://aka.doubaocdn.com/s/VM7rqQLVw1','https://aka.doubaocdn.com/s/nKxWjuELRh'],video:'https://aka.doubaocdn.com/s/JBhvZSU0C1',price:null,
    motor:'—',battery:'614.4V 200AH LFP',speed:'—',range:'122.88 kWh',brake:'BMS + Thermal',wheel:'—',weight:'650 kg',desc:'Industrial high-voltage storage battery pack, 614.4V platform, for commercial & industrial storage and data center backup.',extra:'Inquire · C&I Storage'}
 ];
 

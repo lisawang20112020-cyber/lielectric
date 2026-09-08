@@ -259,6 +259,20 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:.02em;}
 .video-wrap video{width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,.12);display:block;background:#000;}
 .video-caption{text-align:center;margin-top:16px;font-size:14px;color:var(--text2);}
 
+
+.new-badge{position:absolute;top:10px;right:10px;background:#e63946;color:#fff;font-size:10px;font-weight:800;padding:3px 10px;border-radius:20px;letter-spacing:1px;z-index:2;box-shadow:0 2px 8px rgba(230,57,70,.4);}
+.new-arrivals{padding:60px 0;}
+.new-arrivals .new-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:32px;}
+.new-arrivals .new-card{border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#fff;transition:transform .3s,box-shadow .3s;cursor:pointer;position:relative;}
+.new-arrivals .new-card:hover{transform:translateY(-4px);box-shadow:0 8px 30px rgba(0,0,0,.1);}
+.new-arrivals .new-card .nc-img{aspect-ratio:4/3;overflow:hidden;background:#f5f5f5;position:relative;}
+.new-arrivals .new-card .nc-img img{width:100%;height:100%;object-fit:cover;}
+.new-arrivals .new-card .nc-body{padding:16px;}
+.new-arrivals .new-card .nc-model{font-size:12px;color:var(--text2);font-weight:600;letter-spacing:1px;}
+.new-arrivals .new-card .nc-name{font-size:16px;font-weight:700;margin:4px 0 8px;font-family:var(--display);}
+.new-arrivals .new-card .nc-price{font-size:18px;font-weight:800;color:var(--black);}
+.new-arrivals .new-card .nc-price small{font-size:11px;color:var(--text2);font-weight:400;display:block;}
+
 </style>
 </head>
 <body>
@@ -313,6 +327,51 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:.02em;}
     </div>
   </div>
 
+  <section class="section new-arrivals">
+    <div class="container">
+      <div class="eyebrow">Just Launched</div>
+      <h2 style="font-size:32px;margin-bottom:8px;">New Arrivals</h2>
+      <p style="color:var(--text2);font-size:14px;max-width:600px;">Check out our latest electric mobility and energy storage products — now available for bulk orders and OEM customization.</p>
+      <div class="new-grid">
+        <div class="new-card" onclick="location.hash='#/product/LWMT2'">
+          <div class="nc-img"><span class="new-badge">NEW</span><img src="https://aka.doubaocdn.com/s/xtJyLezM8F" alt="LWMT2"></div>
+          <div class="nc-body">
+            <div class="nc-model">LWMT2</div>
+            <div class="nc-name">T1 Mid-Drive E-Motorcycle</div>
+            <div class="nc-price" style="font-size:16px;">Inquire<small>Contact sales for pricing</small></div>
+          </div>
+        </div>
+        <div class="new-card" onclick="location.hash='#/product/LWMT1'">
+          <div class="nc-img"><span class="new-badge">NEW</span><img src="https://aka.doubaocdn.com/s/oMjE7Xpaq3" alt="LWMT1"></div>
+          <div class="nc-body">
+            <div class="nc-model">LWMT1</div>
+            <div class="nc-name">T1 Hub Motor E-Motorcycle</div>
+            <div class="nc-price" style="font-size:16px;">Inquire<small>Contact sales for pricing</small></div>
+          </div>
+        </div>
+        <div class="new-card" onclick="location.hash='#/product/LWMM1'">
+          <div class="nc-img"><span class="new-badge">NEW</span><img src="https://aka.doubaocdn.com/s/jVmRANHvWz" alt="LWMM1"></div>
+          <div class="nc-body">
+            <div class="nc-model">LWMM1</div>
+            <div class="nc-name">M1 Hub Motor E-Motorcycle</div>
+            <div class="nc-price" style="font-size:16px;">Inquire<small>Contact sales for pricing</small></div>
+          </div>
+        </div>
+        <div class="new-card" onclick="location.hash='#/product/LW614200'">
+          <div class="nc-img"><span class="new-badge">NEW</span><img src="https://aka.doubaocdn.com/s/U6fS9CsWIi" alt="LW614200"></div>
+          <div class="nc-body">
+            <div class="nc-model">LW614200</div>
+            <div class="nc-name">614.4V Industrial ESS</div>
+            <div class="nc-price" style="font-size:16px;">Bulk Inquiry<small>Contact sales for pricing</small></div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:32px;">
+        <a href="#/products" class="btn btn-outline">View All Products</a>
+      </div>
+    </div>
+  </section>
+
   <section class="section">
     <div class="container">
       <div class="eyebrow">Product Series</div>
@@ -323,7 +382,7 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:.02em;}
           <div class="thumb"><img src="https://aka.doubaocdn.com/s/CfsTHrRRul" alt="Electric Motorcycles"></div>
           <div class="body">
             <h3>Electric Motorcycles</h3>
-            <p>9 Models · 1000W–10KW · Range 80–120km · LFP / NCM Battery</p>
+            <p>10+ Models · 1200W–5000W · Range 80–160km · LFP / NCM Battery</p>
           </div>
         </div>
         <div class="series-card" onclick="location.hash='#/products?cat=bike'">
@@ -505,7 +564,7 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:.02em;}
             <p>Phone / WeChat: <a href="tel:+8618967973377">+86 189 6797 3377</a></p>
             <p>WhatsApp: <a href="https://wa.me/8618967973377" target="_blank">+86 189 6797 3377</a></p>
             <p>Tel: +86-579-82360077</p>
-            <p>Email: <a href="mailto:kathy@lielectric.cn">kathy@lielectric.cn</a></p>
+            <p>Email: <a href="mailto:sales@lielectric.cn">sales@lielectric.cn</a></p>
           </div>
         </div>
         <div class="contact-form">
@@ -562,7 +621,7 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:.02em;}
         <h4>Contact Sales</h4>
         <p>Kathy: +86 189 6797 3377</p>
         <p>WhatsApp: +86 189 6797 3377</p>
-        <p>kathy@lielectric.cn</p>
+        <p>sales@lielectric.cn</p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -585,7 +644,7 @@ var PRODUCTS = [
    motor:'2KW (PEAK 4KW)',battery:'72V 50AH LFP LiFePO4',speed:'80 km/h',range:'80-100 km',brake:'Front/Rear Disc 220mm',wheel:'14 inch',weight:'75 kg',desc:'Classic sport scooter design with long-range LFP battery, ideal for urban commuting and short-distance delivery.'},
   {id:'LWM03',cat:'moto',name:'Aquarius',images:['https://aka.doubaocdn.com/s/CfsTHrRRul','https://aka.doubaocdn.com/s/H1UuUFr9DI','https://aka.doubaocdn.com/s/GYY5hiwmUe','https://aka.doubaocdn.com/s/yOVQidOdDO','https://aka.doubaocdn.com/s/EMUnWDl6Qq'],video:null,price:2550,
    motor:'3KW (PEAK 6KW) Hub Motor',battery:'72V 50AH LFP',speed:'85 km/h',range:'80-100 km',brake:'Disc 220mm CBS',wheel:'14 inch',weight:'85 kg',desc:'High-power hub motor with CBS combined braking, stable at high speed, suitable for long-distance riding.'},
-  {id:'LWM04PRO',cat:'moto',name:'BULL PRO',images:['https://aka.doubaocdn.com/s/rsbKK5RSxy','https://aka.doubaocdn.com/s/mfMFuiErS6','https://aka.doubaocdn.com/s/LvQ8Q27huR','https://aka.doubaocdn.com/s/rM9mwsEf5g','https://aka.doubaocdn.com/s/0lY0oXUr6x'],video:null,price:6900,
+  {id:'LWM04PRO',cat:'moto',name:'BULL PRO',isNew:true,images:['https://aka.doubaocdn.com/s/rsbKK5RSxy','https://aka.doubaocdn.com/s/mfMFuiErS6','https://aka.doubaocdn.com/s/LvQ8Q27huR','https://aka.doubaocdn.com/s/rM9mwsEf5g','https://aka.doubaocdn.com/s/0lY0oXUr6x'],video:null,price:6900,
    motor:'5KW (PEAK 10KW)',battery:'72V 52AH NCM',speed:'80 km/h',range:'80-100 km',brake:'Disc 220mm CBS',wheel:'12 inch',weight:'75 kg',desc:'Flagship performance model with 10KW peak power, 7-inch TFT display, BYD fast charging supported.',extra:'7-inch TFT · BYD Fast Charge'},
   {id:'LWM05',cat:'moto',name:'GEMINI',images:['https://aka.doubaocdn.com/s/PKSSXWy6zp','https://aka.doubaocdn.com/s/vV7WMTa8eH','https://aka.doubaocdn.com/s/lUVJsDcbi9','https://aka.doubaocdn.com/s/BCm8MazXUl','https://aka.doubaocdn.com/s/sVtAJ9orq6'],video:null,price:2500,
    motor:'2KW (PEAK 4KW)',battery:'72V 52AH NCM',speed:'60 km/h',range:'80-100 km',brake:'Disc 220mm',wheel:'10 inch',weight:'75 kg',desc:'Retro rounded design, compact and agile, lightweight NCM battery — top choice for city commuting.'},
@@ -593,12 +652,18 @@ var PRODUCTS = [
    motor:'4.5KW (PEAK 9.6KW)',battery:'72V 40AHx2 Lithium',speed:'105 km/h',range:'80-100 km',brake:'Disc 220mm CBS',wheel:'F/R 100/80-14',weight:'75 kg',desc:'High-speed sport model with dual battery pack, 105km/h top speed, TFT display, run-flat tires.',extra:'TFT Display · Run-Flat Tires'},
   {id:'LWM07',cat:'moto',name:'Pisces',images:['https://aka.doubaocdn.com/s/726FczOK0O','https://aka.doubaocdn.com/s/mVxZXk08kW','https://aka.doubaocdn.com/s/oY5EYGgDEJ','https://aka.doubaocdn.com/s/A4EBxHK4at','https://aka.doubaocdn.com/s/OR9PiTul4V'],video:null,price:1000,
    motor:'1000W Hub Motor',battery:'60V 20AH Lead-Acid',speed:'45 km/h',range:'80 km',brake:'Front Disc / Rear Drum',wheel:'10 inch',weight:'44 kg',desc:'Affordable entry model with low-cost lead-acid battery, lightweight and easy to handle for short commutes.'},
-  {id:'LWM08',cat:'moto',name:'Sagittarius',images:['https://aka.doubaocdn.com/s/dYKiUKYPyr','https://aka.doubaocdn.com/s/AJOaCK8vPz','https://aka.doubaocdn.com/s/VO7Pz6wUOv','https://aka.doubaocdn.com/s/6xJCczddcd','https://aka.doubaocdn.com/s/hQXNxPJUdu'],video:null,price:1300,
+  {id:'LWM08',cat:'moto',name:'Sagittarius',isNew:true,images:['https://aka.doubaocdn.com/s/dYKiUKYPyr','https://aka.doubaocdn.com/s/AJOaCK8vPz','https://aka.doubaocdn.com/s/VO7Pz6wUOv','https://aka.doubaocdn.com/s/6xJCczddcd','https://aka.doubaocdn.com/s/hQXNxPJUdu'],video:null,price:1300,
    motor:'1200W Hub Motor',battery:'60V 20AH Lead-Acid',speed:'50 km/h',range:'80 km',brake:'Front Disc / Rear Drum',wheel:'10 inch',weight:'60 kg',desc:'Practical cargo model with extended footboard space, durable and economical lead-acid battery for delivery and commuting.'},
+  {id:'LWMM1',cat:'moto',name:'M1 Hub Motor',isNew:true,images:['https://aka.doubaocdn.com/s/jVmRANHvWz','https://aka.doubaocdn.com/s/lF7YIGcXyV','https://aka.doubaocdn.com/s/YxUCmwsBif'],video:null,price:null,
+   motor:'3000W Hub Motor',battery:'72V 60AH (30AH*2)',speed:'85 km/h',range:'160 km',brake:'CBS Disc Brake',wheel:'F 100/80-16 / R 110/80-14',weight:'135 kg',desc:'M1 hub motor electric motorcycle with 3000W motor, dual 72V 30AH batteries, CBS combined braking. Larger frame with 16-inch front wheel and 200kg max load capacity.',extra:'0-50km/h in 12s · Max load 200kg · IP67 · 31mm hydraulic fork'},
+  {id:'LWMT1',cat:'moto',name:'T1 Hub Motor',isNew:true,images:['https://aka.doubaocdn.com/s/oMjE7Xpaq3','https://aka.doubaocdn.com/s/x2Ozih9pRK','https://aka.doubaocdn.com/s/uJjFgji3Cs','https://aka.doubaocdn.com/s/wMPGPWROiq'],video:null,price:null,
+   motor:'3000W Hub Motor',battery:'72V 60AH',speed:'85 km/h',range:'160 km',brake:'CBS Disc Brake',wheel:'F 90/90-12 / R 120/80-12',weight:'120 kg',desc:'T1 hub motor electric motorcycle with 3000W motor, 72V 60AH battery, CBS combined braking system. Compact 12-inch wheel design, max speed 85km/h, range up to 160km at 45km/h.',extra:'0-50km/h in 13s · Max load 180kg · IP67 · FOC controller'},
+  {id:'LWMT2',cat:'moto',name:'T1 Mid-Drive',isNew:true,images:['https://aka.doubaocdn.com/s/xtJyLezM8F','https://aka.doubaocdn.com/s/Jwl0iXzVXY','https://aka.doubaocdn.com/s/AwnDlQ6aSk','https://aka.doubaocdn.com/s/ZGhUPJUcWS','https://aka.doubaocdn.com/s/XJU83P7d0E','https://aka.doubaocdn.com/s/I454UQnWbO'],video:null,price:null,
+   motor:'5000W Mid-Drive Motor',battery:'72V 60AH',speed:'95 km/h',range:'160 km',brake:'CBS Disc Brake',wheel:'F 90/90-12 / R 120/80-12',weight:'120 kg',desc:'T1 mid-drive electric motorcycle with 5000W mid-drive motor, 72V 60AH battery, CBS combined braking. High-performance model with 95km/h top speed and 0-50km/h acceleration in just 7 seconds.',extra:'0-50km/h in 7s · Max load 180kg · IP67 · SHN72180C controller'},
   // --- E-Bicycles ---
   {id:'LWB01',cat:'bike',name:'LIBRA',images:['https://aka.doubaocdn.com/s/49JyQQnTU9','https://aka.doubaocdn.com/s/q6UKTVb2SD','https://aka.doubaocdn.com/s/ZHZAYbULfv','https://aka.doubaocdn.com/s/lfApBMBqQR','https://aka.doubaocdn.com/s/zFiZUVJCCf'],video:null,price:2300,
    motor:'48V 500W',battery:'48V 10AH',speed:'25 km/h',range:'25-50 km',brake:'XOD E500 Hydraulic Disc 180mm',wheel:'20x4.0 inch',weight:'24-28 kg',desc:'Fat-tire electric bicycle with AL6061 aluminum frame, Shimano gears, LCD 5-speed display.',extra:'Shimano TX50-7 · LCD Display'},
-  {id:'LWB02',cat:'bike',name:'Fat Tire E-Bike',images:['https://aka.doubaocdn.com/s/vXOexu0igW','https://aka.doubaocdn.com/s/nsc2mHmWQ7','https://aka.doubaocdn.com/s/t3hmhMVMUt','https://aka.doubaocdn.com/s/EnRHewiW4J','https://aka.doubaocdn.com/s/larSiV2YCR'],video:null,price:2900,
+  {id:'LWB02',cat:'bike',name:'Fat Tire E-Bike',isNew:true,images:['https://aka.doubaocdn.com/s/vXOexu0igW','https://aka.doubaocdn.com/s/nsc2mHmWQ7','https://aka.doubaocdn.com/s/t3hmhMVMUt','https://aka.doubaocdn.com/s/EnRHewiW4J','https://aka.doubaocdn.com/s/larSiV2YCR'],video:null,price:2900,
    motor:'48V 750W (Regenerative)',battery:'48V 25AH LG 21700',speed:'25 MPH',range:'75-140 mi',brake:'XOD E500 Hydraulic Disc 180mm',wheel:'20x4.0 inch',weight:'—',desc:'Long-range fat-tire e-bike with LG 21700 cells, regenerative braking, color TFT display, 5-level pedal assist.',extra:'LG 21700 Cells · Regen Braking · TFT Color'},
   // --- Lithium Batteries ---
   {id:'LW12100',cat:'battery',name:'LiFePO4 12V 100AH',images:['https://aka.doubaocdn.com/s/SNcNUTqk9E','https://aka.doubaocdn.com/s/Pw6I7zbUf4','https://aka.doubaocdn.com/s/yE9ZDUsrM0','https://aka.doubaocdn.com/s/FN7W3myyJY','https://aka.doubaocdn.com/s/Zipz21T4VE'],video:'https://aka.doubaocdn.com/s/JBhvZSU0C1',price:300.86,
@@ -613,7 +678,7 @@ var PRODUCTS = [
    motor:'—',battery:'51.2V 200AH LiFePO4',speed:'—',range:'10240 Wh',brake:'BMS Protection',wheel:'—',weight:'38 kg',desc:'Dedicated lithium battery for electric motorcycles / low-speed vehicles, 51.2V platform, safe and long-life LFP chemistry.',extra:'BMS · 4000+ Cycles'},
   {id:'LW48280',cat:'battery',name:'LiFePO4 48V 280AH',images:['https://aka.doubaocdn.com/s/UWV0doPOZH','https://aka.doubaocdn.com/s/kNPkCD2tu4','https://aka.doubaocdn.com/s/21ogdVdluf','https://aka.doubaocdn.com/s/zLdcVVsp1h','https://aka.doubaocdn.com/s/ODwr8g2m0K'],video:'https://aka.doubaocdn.com/s/JBhvZSU0C1',price:2240.86,
    motor:'—',battery:'51.2V 280AH LiFePO4',speed:'—',range:'14336 Wh',brake:'BMS Protection',wheel:'—',weight:'45 kg',desc:'High-capacity 48V LiFePO4 battery for electric vehicles, solar storage and industrial applications.',extra:'BMS · 4000+ Cycles'},
-  {id:'LW614200',cat:'battery',name:'614.4V 200AH Industrial ESS',images:['https://aka.doubaocdn.com/s/U6fS9CsWIi','https://aka.doubaocdn.com/s/5fpn9FtiRU','https://aka.doubaocdn.com/s/VM7rqQLVw1','https://aka.doubaocdn.com/s/nKxWjuELRh'],video:'https://aka.doubaocdn.com/s/JBhvZSU0C1',price:null,
+  {id:'LW614200',cat:'battery',name:'614.4V 200AH Industrial ESS',isNew:true,images:['https://aka.doubaocdn.com/s/U6fS9CsWIi','https://aka.doubaocdn.com/s/5fpn9FtiRU','https://aka.doubaocdn.com/s/VM7rqQLVw1','https://aka.doubaocdn.com/s/nKxWjuELRh'],video:'https://aka.doubaocdn.com/s/JBhvZSU0C1',price:null,
    motor:'—',battery:'614.4V 200AH LFP',speed:'—',range:'122.88 kWh',brake:'BMS + Thermal',wheel:'—',weight:'650 kg',desc:'Industrial high-voltage storage battery pack, 614.4V platform, for commercial & industrial storage and data center backup.',extra:'Inquire · C&I Storage'}
 ];
 
@@ -674,7 +739,7 @@ function renderProducts(){
     var btnHtml = p.price ? '<button class="add-btn" onclick="event.stopPropagation();addToCart(\''+p.id+'\',1)">Add to Cart</button>'
                           : '<button class="add-btn" onclick="event.stopPropagation();location.hash=\'#/contact\'">Inquire</button>';
     return '<div class="product-card" onclick="location.hash=\'#/product/'+p.id+'\'">'+
-      '<div class="pimg"><span class="cat-tag">'+catLabel[p.cat]+'</span><img src="'+imgSrc+'" alt="'+p.id+'"></div>'+
+      '<div class="pimg"><span class="cat-tag">'+catLabel[p.cat]+'</span>'+(p.isNew?'<span class="new-badge">NEW</span>':'')+'<img src="'+imgSrc+'" alt="'+p.id+'"></div>'+
       '<div class="pbody">'+
         '<div class="model">'+p.id+'</div>'+
         '<div class="pname">'+p.name+'</div>'+
@@ -830,7 +895,7 @@ function submitOrder(){
     '\n\nOrder Details:\n'+orderLines+'\n\nTotal: $'+cartTotal().toFixed(2)+
     '\n\nThis order was placed from lielectric.cn'
   );
-  window.location.href = 'mailto:kathy@lielectric.cn?subject='+subject+'&body='+body;
+  window.location.href = 'mailto:sales@lielectric.cn?subject='+subject+'&body='+body;
   showToast('Opening email client to send order...');
 }
 
@@ -847,7 +912,7 @@ function submitContact(e){
     '\nInterested Products: '+(document.getElementById('cProduct').value||'')+
     '\n\nMessage:\n'+document.getElementById('cMsg').value
   );
-  window.location.href = 'mailto:kathy@lielectric.cn?subject='+subject+'&body='+body;
+  window.location.href = 'mailto:sales@lielectric.cn?subject='+subject+'&body='+body;
   showToast('Opening email client to send inquiry...');
 }
 

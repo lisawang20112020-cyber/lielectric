@@ -274,6 +274,12 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:.02em;}
 .video-wrap{max-width:900px;margin:0 auto;position:relative;}
 .video-wrap video{width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,.12);display:block;background:#000;}
 .video-caption{text-align:center;margin-top:16px;font-size:14px;color:var(--text2);}
+.video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;}
+.video-item{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px;}
+.video-item .video-wrap{max-width:100%;}
+.video-item .video-wrap video{border-radius:8px;box-shadow:none;}
+.video-title{font-family:var(--display);font-size:20px;font-weight:700;margin:16px 0 4px;}
+.video-item .video-caption{text-align:left;margin-top:0;}
 
 
 .new-badge{position:absolute;top:10px;right:10px;background:#e63946;color:#fff;font-size:10px;font-weight:800;padding:3px 10px;border-radius:20px;letter-spacing:1px;z-index:2;box-shadow:0 2px 8px rgba(230,57,70,.4);}
@@ -387,6 +393,14 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:.02em;}
       <h2 style="font-size:32px;margin-bottom:8px;">New Arrivals</h2>
       <p style="color:var(--text2);font-size:14px;max-width:600px;">Check out our latest electric mobility and energy storage products — now available for bulk orders and OEM customization.</p>
       <div class="new-grid">
+        <div class="new-card" onclick="location.hash='#/product/EM02'">
+          <div class="nc-img"><span class="new-badge">NEW</span><img src="images/EM02_1.jpg" alt="EM02 electric scooter 1500W city commuter wholesale"></div>
+          <div class="nc-body">
+            <div class="nc-model">EM02</div>
+            <div class="nc-name">EM02 Urban Scooter</div>
+            <div class="nc-price" style="font-size:16px;">Inquire<small>Contact sales for pricing</small></div>
+          </div>
+        </div>
         <div class="new-card" onclick="location.hash='#/product/LWMT2'">
           <div class="nc-img"><span class="new-badge">NEW</span><img src="images/LWMT2_1.jpg" alt="LWMT2 electric motorcycle new model wholesale"></div>
           <div class="nc-body">
@@ -459,16 +473,31 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:.02em;}
 
   <section class="section video-section">
     <div class="container">
-      <div class="eyebrow">Product Video</div>
-      <h2 style="font-size:32px;margin-bottom:8px;">LiFePO4 Lithium Battery Introduction</h2>
-      <p style="color:var(--text2);font-size:14px;max-width:600px;margin-bottom:24px;">Watch our LiFePO4 lithium battery production and product showcase — built for electric mobility, solar storage and industrial applications.</p>
-      <div class="video-wrap">
-        <video controls preload="metadata" playsinline>
-          <source src="videos/battery-intro.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+      <div class="eyebrow">Product Videos</div>
+      <h2 style="font-size:32px;margin-bottom:8px;">See Our Products in Action</h2>
+      <p style="color:var(--text2);font-size:14px;max-width:600px;margin-bottom:32px;">Real product walkarounds and production showcases — electric motorcycles, e-bikes and LiFePO4 battery systems.</p>
+      <div class="video-grid">
+        <div class="video-item">
+          <div class="video-wrap">
+            <video controls preload="none" playsinline poster="images/EM02_poster.jpg">
+              <source src="videos/em02.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <h3 class="video-title">EM02 Electric Scooter</h3>
+          <p class="video-caption">Sleek &middot; Reliable &middot; Ergonomic &middot; OEM &amp; ODM Supported</p>
+        </div>
+        <div class="video-item">
+          <div class="video-wrap">
+            <video controls preload="metadata" playsinline>
+              <source src="videos/battery-intro.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <h3 class="video-title">LiFePO4 Lithium Battery</h3>
+          <p class="video-caption">LiFePO4 Battery Series &middot; 12V / 24V / 48V / 614.4V</p>
+        </div>
       </div>
-      <p class="video-caption">LiFePO4 Battery Series &middot; 12V / 24V / 48V / 614.4V &middot; OEM &amp; ODM Supported</p>
     </div>
   </section>
 
@@ -714,6 +743,11 @@ var PRODUCTS = [
    motor:'3000W Hub Motor',battery:'72V 60AH',speed:'85 km/h',range:'160 km',brake:'CBS Disc Brake',wheel:'F 90/90-12 / R 120/80-12',weight:'120 kg',desc:'T1 hub motor electric motorcycle with 3000W motor, 72V 60AH battery, CBS combined braking system. Compact 12-inch wheel design, max speed 85km/h, range up to 160km at 45km/h.',extra:'0-50km/h in 13s · Max load 180kg · IP67 · FOC controller'},
   {id:'LWMT2',cat:'moto',name:'T1 Mid-Drive',isNew:true,images:['images/LWMT2_1.jpg','images/LWMT2_2.jpg','images/LWMT2_3.jpg','images/LWMT2_4.jpg','images/LWMT2_5.jpg','images/LWMT2_6.jpg'],video:null,price:null,
    motor:'5000W Mid-Drive Motor',battery:'72V 60AH',speed:'95 km/h',range:'160 km',brake:'CBS Disc Brake',wheel:'F 90/90-12 / R 120/80-12',weight:'120 kg',desc:'T1 mid-drive electric motorcycle with 5000W mid-drive motor, 72V 60AH battery, CBS combined braking. High-performance model with 95km/h top speed and 0-50km/h acceleration in just 7 seconds.',extra:'0-50km/h in 7s · Max load 180kg · IP67 · SHN72180C controller'},
+  {id:'EM02',cat:'moto',name:'EM02 Urban Scooter',isNew:true,images:['images/EM02_1.jpg'],video:'videos/em02.mp4',price:null,
+   motor:'1500W Hub Motor',battery:'60V 24Ah Lithium (Greenway)',speed:'55 km/h',range:'60 km',brake:'Front Disc & Rear Disc',wheel:'F/R 90/80-12',weight:'—',
+   desc:'EM02 city electric scooter with 1500W motor and 60V 24Ah lithium battery. Smooth Italian-inspired bodywork, 60km range, dual disc brakes, aluminum alloy wheels and full LED lighting — built for comfortable daily commuting.',
+   specsExtra:[['Size (L×W×H)','1850 × 684 × 1121 mm'],['Wheelbase','1285 mm'],['Ground Clearance','140 mm'],['Seat Height','750 mm'],['Hill-ability','15° (30%)'],['Wheel Material','Aluminum alloy'],['Accessories','LED Display · LED Light · USB · 4A Charger'],['Loading Qty','SKD 105 pcs / CKD 120 pcs per 40\'HQ']],
+   extra:'EM02 new model · 60km range · Aluminum alloy wheels'},
   // --- E-Bicycles ---
   {id:'LWB01',cat:'bike',name:'LIBRA',images:['images/LWB01_1.jpg','images/LWB01_2.jpg','images/LWB01_3.jpg','images/LWB01_4.jpg','images/LWB01_5.jpg'],video:null,price:2300,
    motor:'48V 500W',battery:'48V 10AH',speed:'25 km/h',range:'25-50 km',brake:'XOD E500 Hydraulic Disc 180mm',wheel:'20x4.0 inch',weight:'24-28 kg',desc:'Fat-tire electric bicycle with AL6061 aluminum frame, Shimano gears, LCD 5-speed display.',extra:'Shimano TX50-7 · LCD Display'},
@@ -844,6 +878,7 @@ function renderDetail(id){
         '<tr><td>Brakes</td><td>'+p.brake+'</td></tr>'+
         '<tr><td>Wheel Size</td><td>'+p.wheel+'</td></tr>'+
         '<tr><td>Weight</td><td>'+p.weight+'</td></tr>'+
+        (p.specsExtra || []).map(function(row){ return '<tr><td>'+row[0]+'</td><td>'+row[1]+'</td></tr>'; }).join('')+
         (p.extra ? '<tr><td>Highlights</td><td>'+p.extra+'</td></tr>' : '')+
       '</table>'+
       priceHtml + actionHtml +

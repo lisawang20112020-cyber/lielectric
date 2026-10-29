@@ -1,141 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.lielectric.cn/</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/#/products</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.lielectric.cn/products.html</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/#/about</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.lielectric.cn/about.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lielectric.cn/contact.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lielectric.cn/products/lwm02.html</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/#/contact</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.lielectric.cn/products/lwm03.html</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/#/product/LWM02</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.lielectric.cn/products/lwm04pro.html</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/#/product/LWM03</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.lielectric.cn/products/lwm05.html</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/#/product/LWM04PRO</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.lielectric.cn/products/lwm06s.html</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/#/product/LWM05</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.lielectric.cn/products/lwm07.html</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/#/product/LWM06S</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.lielectric.cn/products/lwm08.html</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/#/product/LWM07</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.lielectric.cn/products/lwmm1.html</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/#/product/LWM08</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.lielectric.cn/products/lwmt1.html</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/#/product/LWMM1</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.lielectric.cn/products/lwmt2.html</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/#/product/LWMT1</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.lielectric.cn/products/em02.html</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/#/product/LWMT2</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.lielectric.cn/products/lwb01.html</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/#/product/LWB01</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.lielectric.cn/products/lwb02.html</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/#/product/LWB02</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.lielectric.cn/products/lw12100.html</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/#/product/LW12100</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.lielectric.cn/products/lw12200.html</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/#/product/LW12200</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.lielectric.cn/products/lw24100.html</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/#/product/LW24100</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.lielectric.cn/products/lw24280.html</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/#/product/LW24280</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.lielectric.cn/products/lw48200.html</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/#/product/LW48200</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.lielectric.cn/products/lw48280.html</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/#/product/LW48280</loc>
-    <lastmod>2026-09-08</lastmod>
+    <loc>https://www.lielectric.cn/products/lw614200.html</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lisawang20112020-cyber.github.io/lielectric/#/product/LW614200</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
 </urlset>

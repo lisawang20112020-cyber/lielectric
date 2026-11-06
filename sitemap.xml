@@ -20,9 +20,15 @@
   </url>
   <url>
     <loc>https://www.lielectric.cn/contact.html</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.lielectric.cn/pay.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.lielectric.cn/products/lwm02.html</loc>

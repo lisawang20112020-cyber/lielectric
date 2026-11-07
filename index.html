@@ -1123,14 +1123,21 @@ window.addEventListener('hashchange', router);
 updateBadge();
 // 检测从产品页带过来的 ?add=MODEL 参数，自动加入购物车
 (function(){
-  var qs = new URLSearchParams(location.search);
-  var addId = qs.get('add');
+  // 优先从 localStorage 读（产品页 Order Sample 按钮写入）
+  var addId = null;
+  try { addId = localStorage.getItem('pendingAdd'); } catch(e){}
+  if(addId){
+    try { localStorage.removeItem('pendingAdd'); } catch(e){}
+  }
+  // 后备：URL ?add= 参数
+  if(!addId){
+    var qs = new URLSearchParams(location.search);
+    addId = qs.get('add');
+  }
   if(addId){
     var p = PRODUCTS.find(function(x){return x.id===addId;});
     if(p){
       addToCart(addId, 1);
-      // 清掉 URL 参数避免刷新重复加
-      history.replaceState(null, '', location.pathname + '#/cart');
     }
   }
 })();

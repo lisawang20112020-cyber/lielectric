@@ -334,6 +334,7 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:.02em;}
 }
 </script>
 
+<script src="https://www.paypal.com/sdk/js?client-id=BAAF6b4SwqAI6q_Y6ekazCS4NYfGeqY3LN3jdPZsmMpYwwy8VrfJUA-RZP6ItwDKyrZsFDPg6ew4BOVaio&currency=USD&intent=capture"></script>
 </head>
 <body>
 
@@ -958,13 +959,65 @@ function renderCart(){
         '<div class="bank-row"><span class="bank-label">Beneficiary Address</span><span class="bank-value">NO.183 4th floor, Jinou Road, Dongxiao Street, Jindong District, Jinhua, Zhejiang, China</span></div>'+
         '<p class="bank-note">* Please note payment purpose (e.g. "Order for LWM02 x 10") when transferring.</p>'+
       '</div>'+
-      '<div class="paypal-notice">'+
-        '<strong>How to order:</strong> Click "Submit Order" below — order details will be emailed to us. We will confirm stock and shipping cost within 24 hours. Then you can make T/T bank transfer using the details above.<br>'+
-        'For large B2B orders, T/T bank transfer is recommended.'+
+      '      '<div style="margin-top:20px;padding-top:16px;border-top:1px dashed var(--border);">'+
+        '<div style="font-size:13px;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:8px;">💳 Or pay online with PayPal / Credit Card</div>'+
+        '<div id="paypal-button-container"></div>'+
+        '<p style="font-size:11px;color:#999;margin-top:8px;line-height:1.6;">Sample orders can be paid instantly with PayPal or any credit/debit card. For large B2B orders, T/T bank transfer below is recommended.</p>'+
       '</div>'+
-      '<button class="btn btn-dark" style="width:100%;justify-content:center;margin-top:12px;" onclick="submitOrder()">Submit Order</button>'+
+      '<div class="paypal-notice">'+
+        '<strong>Prefer bank transfer?</strong> Click "Submit Order by Email" to send us your order details — we will confirm stock and shipping cost, then you can make T/T transfer using the details above.'+
+      '</div>'+
+      '<button class="btn btn-dark" style="width:100%;justify-content:center;margin-top:12px;" onclick="submitOrder()">Submit Order by Email</button>'+
     '</div>';
 
+  renderPayPalBtn();
+}
+
+
+// ===== PayPal 按钮渲染 =====
+function renderPayPalBtn(){
+  var container = document.getElementById('paypal-button-container');
+  if(!container || typeof paypal === 'undefined') return;
+  if(cart.length === 0) { container.innerHTML = ''; return; }
+  var total = cartTotal();
+  if(total <= 0) { container.innerHTML = '<p style="font-size:12px;color:#999;">Price TBD — contact seller for exact amount.</p>'; return; }
+  container.innerHTML = '';
+  var desc = cart.map(function(i){
+    var p = PRODUCTS.find(function(x){return x.id===i.id;});
+    return p ? p.id+' x'+i.qty : i.id;
+  }).join(', ');
+  paypal.Buttons({
+    style: { layout:'vertical', color:'gold', shape:'rect', label:'paypal', height:44 },
+    createOrder: function(data, actions){
+      return actions.order.create({
+        purchase_units: [{
+          description: 'LI ELECTRIC sample order: ' + desc,
+          amount: { currency_code: 'USD', value: total.toFixed(2) }
+        }]
+      });
+    },
+    onApprove: function(data, actions){
+      return actions.order.capture().then(function(details){
+        showToast('Payment successful: ' + details.id);
+        cart = [];
+        localStorage.setItem('li_cart', JSON.stringify(cart));
+        var el = document.getElementById('cartLayout');
+        if(el){
+          el.innerHTML = '<div style="max-width:600px;margin:40px auto;text-align:center;background:#E8F5E9;border:1px solid #A5D6A7;border-radius:10px;padding:40px;">' +
+            '<div style="width:56px;height:56px;border-radius:50%;background:#2e7d32;color:#fff;font-size:28px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-weight:700;">✓</div>' +
+            '<h3 style="color:#1b5e20;font-size:22px;margin-bottom:10px;">Payment Successful!</h3>' +
+            '<p style="font-size:14px;color:#2e7d32;margin-bottom:6px;">Thank you. Transaction ID: <strong>'+details.id+'</strong></p>' +
+            '<p style="font-size:13px;color:#2e7d32;">We will send you a confirmation email and production update within 24 hours. Please save your transaction ID for reference.</p>' +
+            '<a href="products.html" class="btn btn-primary" style="margin-top:20px;">Continue Shopping</a></div>';
+        }
+        window.scrollTo({top:0, behavior:'smooth'});
+      });
+    },
+    onError: function(err){
+      console.error('PayPal error:', err);
+      alert('PayPal error. Please try again or contact sales@lielectric.cn');
+    }
+  }).render(container);
 }
 
 // ===== 提交订单 =====
@@ -1068,6 +1121,19 @@ window.addEventListener('hashchange', router);
 
 // ===== 初始化 =====
 updateBadge();
+// 检测从产品页带过来的 ?add=MODEL 参数，自动加入购物车
+(function(){
+  var qs = new URLSearchParams(location.search);
+  var addId = qs.get('add');
+  if(addId){
+    var p = PRODUCTS.find(function(x){return x.id===addId;});
+    if(p){
+      addToCart(addId, 1);
+      // 清掉 URL 参数避免刷新重复加
+      history.replaceState(null, '', location.pathname + '#/cart');
+    }
+  }
+})();
 router();
 </script>
 

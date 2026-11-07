@@ -1121,27 +1121,33 @@ window.addEventListener('hashchange', router);
 
 // ===== 初始化 =====
 updateBadge();
-// 检测从产品页带过来的 ?add=MODEL 参数，自动加入购物车
-(function(){
-  // 优先从 localStorage 读（产品页 Order Sample 按钮写入）
+router();
+// 处理从产品页带过来的加购请求（包 try/catch，不阻塞路由）
+try {
   var addId = null;
   try { addId = localStorage.getItem('pendingAdd'); } catch(e){}
   if(addId){
     try { localStorage.removeItem('pendingAdd'); } catch(e){}
   }
-  // 后备：URL ?add= 参数
   if(!addId){
-    var qs = new URLSearchParams(location.search);
-    addId = qs.get('add');
+    try {
+      var qs = new URLSearchParams(location.search);
+      addId = qs.get('add');
+    } catch(e){}
   }
   if(addId){
     var p = PRODUCTS.find(function(x){return x.id===addId;});
     if(p){
       addToCart(addId, 1);
+      // 如果当前在购物车页，重新渲染一次让商品出现
+      if(location.hash.indexOf('#/cart') === 0){
+        renderCart();
+      }
     }
   }
-})();
-router();
+} catch(err) {
+  console.error('pendingAdd error:', err);
+}
 </script>
 
 <!-- Lightbox -->

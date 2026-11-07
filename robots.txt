@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lisawang20112020-cyber.github.io/lielectric/sitemap.xml
+Disallow: /cart.html
+Disallow: /checkout.html
+Disallow: /zh/cart.html
+Disallow: /zh/checkout.html
+Disallow: /es/cart.html
+Disallow: /es/checkout.html
+
+Sitemap: https://aurelle.com.cn/sitemap.xml

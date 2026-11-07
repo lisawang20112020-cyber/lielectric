@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pago | AURELLE</title>
+<meta name="description" content="Este sitio no recoge datos de tarjeta. El pago se hace en el enlace seguro que te enviamos.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://aurelle.com.cn/es/checkout.html">
+<link rel="alternate" hreflang="en" href="https://aurelle.com.cn/checkout.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://aurelle.com.cn/zh/checkout.html">
+<link rel="alternate" hreflang="es" href="https://aurelle.com.cn/es/checkout.html">
+<link rel="alternate" hreflang="x-default" href="https://aurelle.com.cn/checkout.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AURELLE">
+<meta property="og:title" content="Pago | AURELLE">
+<meta property="og:description" content="Este sitio no recoge datos de tarjeta. El pago se hace en el enlace seguro que te enviamos.">
+<meta property="og:url" content="https://aurelle.com.cn/es/checkout.html">
+<meta property="og:image" content="https://aurelle.com.cn/assets/img/hero-main.jpg">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#fbf7f4">
+<link rel="icon" type="image/png" sizes="512x512" href="../assets/img/favicon.png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/css/site.css">
+
+</head>
+<body><header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="../es/" aria-label="AURELLE — home">
+      <img src="../assets/img/logo-mark.png" width="34" height="34" alt="AURELLE crescent mark">
+      <span class="wordmark">AURELLE</span>
+    </a>
+    <nav class="main-nav" aria-label="Main"><a href="../es/collections/earrings.html">Pendientes</a><a href="../es/collections/bracelets.html">Pulseras</a><a href="../es/collections/necklaces.html">Collares</a><a href="../es/about.html">Marca</a><a href="../es/contact.html">Contacto</a><a href="../es/shipping.html">Envíos y pago</a></nav>
+    <div class="head-tools">
+      <div class="lang-switch" aria-label="Idioma"><a href="../checkout.html" hreflang="en">EN</a><a href="../zh/checkout.html" hreflang="zh-Hans">中文</a><a class="is-active" href="../es/checkout.html" aria-current="true">ES</a></div>
+      <a class="cart-link" href="../es/cart.html" aria-label="Bolsa">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 11H7L6 8Z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M9.5 8V6.5a2.5 2.5 0 0 1 5 0V8" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+        <span data-cart-count>0</span>
+      </a>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <div class="page-head">
+      <span class="eyebrow">Datos del pedido</span>
+      <h1 class="display">Pago</h1>
+    </div>
+
+    <div class="checkout-layout" data-checkout-main>
+      <form id="checkout-form" data-checkout-form novalidate>
+        <div class="form-section">
+          <h2>Datos de contacto</h2>
+          <div class="form-grid">
+            <div class="field span-2"><label for="f-name">Nombre completo</label><input id="f-name" name="name" required autocomplete="name" placeholder="Maria Lopez"></div>
+            <div class="field"><label for="f-email">Correo electrónico</label><input id="f-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com"></div>
+            <div class="field"><label for="f-phone">Teléfono / WhatsApp</label><input id="f-phone" name="phone" autocomplete="tel" placeholder="+1 555 0100"></div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h2>Dirección de entrega</h2>
+          <div class="form-grid">
+            <div class="field span-2"><label for="f-address">Dirección</label><input id="f-address" name="address" required autocomplete="street-address" placeholder="Street, number, apartment"></div>
+            <div class="field"><label for="f-city">Ciudad / Provincia</label><input id="f-city" name="city" autocomplete="address-level2"></div>
+            <div class="field"><label for="f-postal">Código postal</label><input id="f-postal" name="postal" autocomplete="postal-code"></div>
+            <div class="field span-2"><label for="f-country">País</label><select id="f-country" name="country" required autocomplete="country-name" style="border:1px solid var(--line-strong);background:var(--white);padding:.7rem .8rem;min-height:46px;border-radius:0"><option value="">—</option><option>United States</option><option>United Kingdom</option><option>Spain</option><option>Mexico</option><option>Brazil</option><option>Argentina</option><option>Chile</option><option>Colombia</option><option>Peru</option><option>Canada</option><option>Australia</option><option>Germany</option><option>France</option><option>Italy</option><option>Netherlands</option><option>Morocco</option><option>Iraq</option><option>United Arab Emirates</option><option>Saudi Arabia</option><option>Singapore</option><option>Japan</option><option>Korea</option><option>China</option><option>Other</option></select></div>
+            <div class="field span-2"><label for="f-notes">Notas (opcional)</label><textarea id="f-notes" name="notes" placeholder="Gift note, delivery preference, VAT number…"></textarea></div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h2>Forma de pago</h2>
+          <label class="paymethod">
+            <input type="radio" name="paymethod" value="online" checked data-paymethod>
+            <span><strong>Pagar en línea — enlace de pago seguro</strong><span>Te enviamos por correo un enlace de un solo uso para tarjeta o PayPal, con las piezas y el porte, normalmente en un día hábil.</span></span>
+          </label>
+          <label class="paymethod">
+            <input type="radio" name="paymethod" value="offline" data-paymethod>
+            <span><strong>Transferencia bancaria (T/T)</strong><span>Paga en USD o EUR a la cuenta de la empresa. Los datos aparecen en la página de confirmación.</span></span>
+          </label>
+        </div>
+
+        <button class="btn wide" type="submit">Realizar pedido</button>
+        <p class="sum-note" style="margin-top:.8rem">Nunca pedimos números de tarjeta por correo ni por WhatsApp.</p>
+      </form>
+
+      <aside class="sum-card">
+        <h2>Tu pedido</h2>
+        <div class="order-lines" data-order-lines></div>
+        <div class="sum-row" style="border-top:1px solid var(--line);padding-top:.9rem"><span>Piezas</span><span data-order-count>0</span></div>
+        <div class="sum-row"><span>Subtotal</span><span data-order-subtotal>$0.00</span></div>
+        <div class="sum-row"><span>Envío</span><span>Se cotiza antes del pago</span></div>
+        <div class="sum-row total"><span>Total</span><span data-order-subtotal>$0.00</span></div>
+        <p class="sum-note" data-pay-note></p>
+      </aside>
+    </div>
+
+    <section class="confirm" data-confirm hidden tabindex="-1" style="margin-bottom:3rem;max-width:820px">
+      <span class="order-ref">Referencia del pedido: <strong data-confirm-ref>—</strong></span>
+      <h2>Pedido recibido</h2>
+      <p>Gracias — tu pedido queda reservado. Guarda la referencia.</p>
+      <p data-confirm-online>Usa el botón de PayPal de abajo para completar el pago. El pedido se confirma al recibirlo.</p>
+      <p data-confirm-offline hidden>Transfiere el total a la cuenta indicada, citando el número de pedido. El pedido se embala cuando el pago se confirma.</p>
+      <p class="sum-note">Total: <strong data-confirm-sum>$0.00</strong></p>
+      <div class="confirm-lines" data-confirm-lines></div>
+      <div class="pay-now" data-pay-now hidden></div>
+      <div class="bank" data-bank hidden>
+      <h3 style="margin:0 0 .4rem;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-faint)">Datos para la transferencia</h3>
+      <div class="bank-row"><span class="k">Beneficiario</span><span class="v">JINHUA LI ELECTRIC TRADING CO., LTD</span></div>
+      <div class="bank-row"><span class="k">Banco</span><span class="v">BANK OF CHINA JINHUA BRANCH, JINDONG SUB-BRANCH</span></div>
+      <div class="bank-row"><span class="k">SWIFT</span><span class="v">BKCHCNBJ92H</span></div>
+      <div class="bank-row"><span class="k">Cuenta · USD</span><span class="v">392284749260</span></div>
+      <div class="bank-row"><span class="k">Cuenta · EUR</span><span class="v">390984762597</span></div>
+      <div class="bank-row"><span class="k">Dirección del beneficiario</span><span class="v">NO.183 4th floor, Jinou Road, Dongxiao Street, Jindong District, Jinhua, Zhejiang, China</span></div>
+      <p class="sum-note" style="margin:.6rem 0 0">Usa el número de pedido como referencia de la transferencia para poder identificarla.</p>
+    </div>
+      <div class="confirm-actions">
+        <a class="btn" href="#" data-send-email>Enviar pedido por correo</a>
+        <a class="btn ghost" href="#" data-send-whatsapp target="_blank" rel="noopener">Enviar por WhatsApp</a>
+        <button class="btn ghost" type="button" data-copy>Copiar los datos</button>
+        <button class="btn ghost" type="button" data-print>Imprimir</button>
+      </div>
+      <p class="sum-note">Nunca pedimos números de tarjeta por correo ni por WhatsApp.</p>
+    </section>
+  </div>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="../assets/img/logo-paper.png" alt="AURELLE" width="168">
+        <p>Joyería de plata, en series cortas, en Jinhua, Zhejiang.</p>
+      </div>
+      <div class="foot-col"><h4>Tienda</h4><ul><li><a href="../es/collections/earrings.html">Pendientes</a></li><li><a href="../es/collections/bracelets.html">Pulseras</a></li><li><a href="../es/collections/necklaces.html">Collares</a></li></ul></div>
+      <div class="foot-col"><h4>Información</h4><ul><li><a href="../es/shipping.html">Envíos y pago</a></li><li><a href="../es/about.html">Marca</a></li><li><a href="../es/contact.html">Contacto</a></li><li><a href="../es/cart.html">Bolsa</a></li></ul></div>
+      <div class="foot-col"><h4>Contacto</h4><ul>
+        <li><a href="mailto:sales@lielectric.cn">sales@lielectric.cn</a></li>
+        <li><a href="tel:+8613362952925">+86-13362952925</a></li>
+        <li><a href="https://wa.me/8613362952925" rel="noopener">WhatsApp</a></li>
+        <li>NO.183 4th floor, Jinou Road, Dongxiao Street, Jindong District, Jinhua City, Zhejiang Province, China</li>
+      </ul></div>
+    </div>
+    <div class="legal">
+      <span>© 2026 AURELLE · JINHUA LI ELECTRIC TRADING CO., LTD</span>
+      <span>Precios en USD. Porte cotizado por pedido.</span>
+    </div>
+  </div>
+</footer>
+<script>window.AURELLE_ROOT = "../";</script>
+<script src="../assets/js/config.js?v=1793979207"></script>
+<script>window.AURELLE_I18N = {"added": "Añadido a la bolsa", "remove": "Quitar", "decrease": "Reducir cantidad", "increase": "Aumentar cantidad", "quantity": "Cantidad", "subtotal": "Subtotal", "shipping": "Envío", "quoted": "Se cotiza antes del pago", "total": "Total", "payMethod": "Forma de pago", "payOnline": "Enlace de pago seguro", "payOffline": "Transferencia bancaria (T/T)", "noteOnline": "Este sitio no recoge datos de tarjeta. Enviamos un enlace seguro tras el pedido.", "noteOffline": "Usa el número de pedido como referencia de la transferencia.", "fillRequired": "Completa los campos marcados.", "bagEmptyShort": "Tu bolsa está vacía", "copied": "Datos del pedido copiados", "copyFail": "No se pudo copiar — selecciona el texto", "orderRefLabel": "Referencia del pedido", "payNow": "Pagar ahora — pago seguro", "payNowNote": "El envío se cotiza aparte y se factura después del pago.", "payUnavailable": "El pago online aún no está activo — envíanos el pedido por email o WhatsApp y te responderemos con un enlace de pago.", "payFail": "No se pudo iniciar el pago. Inténtalo de nuevo o escríbenos.", "paid": "Pago recibido"}; window.AURELLE_LOCALE = "es-ES";</script>
+<script src="../assets/js/catalog-es.js?v=1793979207"></script>
+<script src="../assets/js/site.js?v=1793979207"></script>
+</body>
+</html>

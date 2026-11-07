@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>结账 | AURELLE</title>
+<meta name="description" content="本站不收集任何银行卡信息，付款在我们发去的安全链接上完成。">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://aurelle.com.cn/zh/checkout.html">
+<link rel="alternate" hreflang="en" href="https://aurelle.com.cn/checkout.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://aurelle.com.cn/zh/checkout.html">
+<link rel="alternate" hreflang="es" href="https://aurelle.com.cn/es/checkout.html">
+<link rel="alternate" hreflang="x-default" href="https://aurelle.com.cn/checkout.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AURELLE">
+<meta property="og:title" content="结账 | AURELLE">
+<meta property="og:description" content="本站不收集任何银行卡信息，付款在我们发去的安全链接上完成。">
+<meta property="og:url" content="https://aurelle.com.cn/zh/checkout.html">
+<meta property="og:image" content="https://aurelle.com.cn/assets/img/hero-main.jpg">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#fbf7f4">
+<link rel="icon" type="image/png" sizes="512x512" href="../assets/img/favicon.png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/css/site.css">
+
+</head>
+<body><header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="../zh/" aria-label="AURELLE — home">
+      <img src="../assets/img/logo-mark.png" width="34" height="34" alt="AURELLE crescent mark">
+      <span class="wordmark">AURELLE</span>
+    </a>
+    <nav class="main-nav" aria-label="Main"><a href="../zh/collections/earrings.html">耳饰</a><a href="../zh/collections/bracelets.html">手饰</a><a href="../zh/collections/necklaces.html">项链</a><a href="../zh/about.html">品牌</a><a href="../zh/contact.html">联系</a><a href="../zh/shipping.html">物流与付款</a></nav>
+    <div class="head-tools">
+      <div class="lang-switch" aria-label="语言"><a href="../checkout.html" hreflang="en">EN</a><a class="is-active" href="../zh/checkout.html" aria-current="true">中文</a><a href="../es/checkout.html" hreflang="es">ES</a></div>
+      <a class="cart-link" href="../zh/cart.html" aria-label="购物袋">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 11H7L6 8Z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M9.5 8V6.5a2.5 2.5 0 0 1 5 0V8" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+        <span data-cart-count>0</span>
+      </a>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <div class="page-head">
+      <span class="eyebrow">订单信息</span>
+      <h1 class="display">结账</h1>
+    </div>
+
+    <div class="checkout-layout" data-checkout-main>
+      <form id="checkout-form" data-checkout-form novalidate>
+        <div class="form-section">
+          <h2>联系方式</h2>
+          <div class="form-grid">
+            <div class="field span-2"><label for="f-name">姓名</label><input id="f-name" name="name" required autocomplete="name" placeholder="Maria Lopez"></div>
+            <div class="field"><label for="f-email">邮箱</label><input id="f-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com"></div>
+            <div class="field"><label for="f-phone">电话 / WhatsApp</label><input id="f-phone" name="phone" autocomplete="tel" placeholder="+1 555 0100"></div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h2>收货地址</h2>
+          <div class="form-grid">
+            <div class="field span-2"><label for="f-address">详细地址</label><input id="f-address" name="address" required autocomplete="street-address" placeholder="Street, number, apartment"></div>
+            <div class="field"><label for="f-city">城市 / 省</label><input id="f-city" name="city" autocomplete="address-level2"></div>
+            <div class="field"><label for="f-postal">邮编</label><input id="f-postal" name="postal" autocomplete="postal-code"></div>
+            <div class="field span-2"><label for="f-country">国家 / 地区</label><select id="f-country" name="country" required autocomplete="country-name" style="border:1px solid var(--line-strong);background:var(--white);padding:.7rem .8rem;min-height:46px;border-radius:0"><option value="">—</option><option>United States</option><option>United Kingdom</option><option>Spain</option><option>Mexico</option><option>Brazil</option><option>Argentina</option><option>Chile</option><option>Colombia</option><option>Peru</option><option>Canada</option><option>Australia</option><option>Germany</option><option>France</option><option>Italy</option><option>Netherlands</option><option>Morocco</option><option>Iraq</option><option>United Arab Emirates</option><option>Saudi Arabia</option><option>Singapore</option><option>Japan</option><option>Korea</option><option>China</option><option>Other</option></select></div>
+            <div class="field span-2"><label for="f-notes">备注（可选）</label><textarea id="f-notes" name="notes" placeholder="Gift note, delivery preference, VAT number…"></textarea></div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h2>付款方式</h2>
+          <label class="paymethod">
+            <input type="radio" name="paymethod" value="online" checked data-paymethod>
+            <span><strong>在线支付 —— PayPal 或刷卡</strong><span>在本页用 PayPal 或 Visa/Mastercard 直接付款，不用 PayPal 账户也能刷卡。</span></span>
+          </label>
+          <label class="paymethod">
+            <input type="radio" name="paymethod" value="offline" data-paymethod>
+            <span><strong>银行转账（T/T）</strong><span>可用美元或欧元汇至公司账户，账户信息显示在确认页。</span></span>
+          </label>
+        </div>
+
+        <button class="btn wide" type="submit">提交订单</button>
+        <p class="sum-note" style="margin-top:.8rem">我们不会通过邮件或 WhatsApp 索取银行卡号。</p>
+      </form>
+
+      <aside class="sum-card">
+        <h2>你的订单</h2>
+        <div class="order-lines" data-order-lines></div>
+        <div class="sum-row" style="border-top:1px solid var(--line);padding-top:.9rem"><span>件数</span><span data-order-count>0</span></div>
+        <div class="sum-row"><span>小计</span><span data-order-subtotal>$0.00</span></div>
+        <div class="sum-row"><span>运费</span><span>付款前另报</span></div>
+        <div class="sum-row total"><span>合计</span><span data-order-subtotal>$0.00</span></div>
+        <p class="sum-note" data-pay-note></p>
+      </aside>
+    </div>
+
+    <section class="confirm" data-confirm hidden tabindex="-1" style="margin-bottom:3rem;max-width:820px">
+      <span class="order-ref">订单号: <strong data-confirm-ref>—</strong></span>
+      <h2>订单已收到</h2>
+      <p>谢谢，订单已为你保留。请记下下面的订单号。</p>
+      <p data-confirm-online>用下方的 PayPal 按钮完成付款，到账后订单生效。</p>
+      <p data-confirm-offline hidden>请按下方账户汇出合计金额，并在附言中填写订单号。款项到账后即安排打包。</p>
+      <p class="sum-note">Total: <strong data-confirm-sum>$0.00</strong></p>
+      <div class="confirm-lines" data-confirm-lines></div>
+      <div class="pay-now" data-pay-now hidden></div>
+      <div class="bank" data-bank hidden>
+      <h3 style="margin:0 0 .4rem;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-faint)">银行转账信息</h3>
+      <div class="bank-row"><span class="k">收款人</span><span class="v">JINHUA LI ELECTRIC TRADING CO., LTD</span></div>
+      <div class="bank-row"><span class="k">开户行</span><span class="v">BANK OF CHINA JINHUA BRANCH, JINDONG SUB-BRANCH</span></div>
+      <div class="bank-row"><span class="k">SWIFT</span><span class="v">BKCHCNBJ92H</span></div>
+      <div class="bank-row"><span class="k">账号 · USD</span><span class="v">392284749260</span></div>
+      <div class="bank-row"><span class="k">账号 · EUR</span><span class="v">390984762597</span></div>
+      <div class="bank-row"><span class="k">收款人地址</span><span class="v">NO.183 4th floor, Jinou Road, Dongxiao Street, Jindong District, Jinhua, Zhejiang, China</span></div>
+      <p class="sum-note" style="margin:.6rem 0 0">汇款时请填写订单号作为附言，方便我们对账。</p>
+    </div>
+      <div class="confirm-actions">
+        <a class="btn" href="#" data-send-email>用邮件发送订单</a>
+        <a class="btn ghost" href="#" data-send-whatsapp target="_blank" rel="noopener">WhatsApp 发送</a>
+        <button class="btn ghost" type="button" data-copy>复制订单信息</button>
+        <button class="btn ghost" type="button" data-print>打印</button>
+      </div>
+      <p class="sum-note">我们不会通过邮件或 WhatsApp 索取银行卡号。</p>
+    </section>
+  </div>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="../assets/img/logo-paper.png" alt="AURELLE" width="168">
+        <p>银饰，在浙江金华小批量制作。</p>
+      </div>
+      <div class="foot-col"><h4>选购</h4><ul><li><a href="../zh/collections/earrings.html">耳饰</a></li><li><a href="../zh/collections/bracelets.html">手饰</a></li><li><a href="../zh/collections/necklaces.html">项链</a></li></ul></div>
+      <div class="foot-col"><h4>信息</h4><ul><li><a href="../zh/shipping.html">物流与付款</a></li><li><a href="../zh/about.html">品牌</a></li><li><a href="../zh/contact.html">联系</a></li><li><a href="../zh/cart.html">购物袋</a></li></ul></div>
+      <div class="foot-col"><h4>联系</h4><ul>
+        <li><a href="mailto:sales@lielectric.cn">sales@lielectric.cn</a></li>
+        <li><a href="tel:+8613362952925">+86-13362952925</a></li>
+        <li><a href="https://wa.me/8613362952925" rel="noopener">WhatsApp</a></li>
+        <li>NO.183 4th floor, Jinou Road, Dongxiao Street, Jindong District, Jinhua City, Zhejiang Province, China</li>
+      </ul></div>
+    </div>
+    <div class="legal">
+      <span>© 2026 AURELLE · JINHUA LI ELECTRIC TRADING CO., LTD</span>
+      <span>价格为美元，运费按单报价。</span>
+    </div>
+  </div>
+</footer>
+<script>window.AURELLE_ROOT = "../";</script>
+<script src="../assets/js/config.js?v=1793979207"></script>
+<script>window.AURELLE_I18N = {"added": "已加入购物袋", "remove": "移除", "decrease": "减少数量", "increase": "增加数量", "quantity": "数量", "subtotal": "小计", "shipping": "运费", "quoted": "付款前另报", "total": "合计", "payMethod": "付款方式", "payOnline": "安全支付链接", "payOffline": "银行转账（T/T）", "noteOnline": "付款在 PayPal 安全页面完成，本站看不到你的卡号。", "noteOffline": "汇款附言请填写订单号，方便我们对账。", "fillRequired": "请填写标出的必填项。", "bagEmptyShort": "购物袋是空的", "copied": "订单信息已复制", "copyFail": "复制失败，请手动选择文字", "orderRefLabel": "订单号", "payNow": "立即付款 —— 安全支付", "payNowNote": "运费另行报价，付款后单独开具。", "payUnavailable": "在线支付尚未开通 —— 请用邮件或 WhatsApp 提交订单，我们会回复付款链接。", "payFail": "支付未能启动，请重试或直接联系我们。", "paid": "已收到付款"}; window.AURELLE_LOCALE = "zh-CN";</script>
+<script src="../assets/js/catalog-zh.js?v=1793979207"></script>
+<script src="../assets/js/site.js?v=1793979207"></script>
+</body>
+</html>

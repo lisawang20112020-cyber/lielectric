@@ -1,83 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Page not found | AURELLE</title>
-<meta name="description" content="The page you were looking for has moved or never existed.">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<link rel="apple-touch-icon" href="/images/favicon-128.png">
+<meta name="theme-color" content="#0D0D0D">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found — LI ELECTRIC</title>
 <meta name="robots" content="noindex, follow">
-<link rel="canonical" href="https://aurelle.com.cn/404.html">
-<link rel="alternate" hreflang="en" href="https://aurelle.com.cn/404.html">
-<link rel="alternate" hreflang="zh-Hans" href="https://aurelle.com.cn/zh/404.html">
-<link rel="alternate" hreflang="es" href="https://aurelle.com.cn/es/404.html">
-<link rel="alternate" hreflang="x-default" href="https://aurelle.com.cn/404.html">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="AURELLE">
-<meta property="og:title" content="Page not found | AURELLE">
-<meta property="og:description" content="The page you were looking for has moved or never existed.">
-<meta property="og:url" content="https://aurelle.com.cn/404.html">
-<meta property="og:image" content="https://aurelle.com.cn/assets/img/hero-main.jpg">
-<meta property="og:locale" content="en_US">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#fbf7f4">
-<link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon.png">
-<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/css/site.css">
+<meta name="description" content="The page you are looking for has moved or no longer exists. Browse LI ELECTRIC electric motorcycles, e-bikes and LiFePO4 lithium batteries, or contact our sales team directly.">
+<link rel="canonical" href="https://lielectric.cn/404.html">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Oswald:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
+<style>
+:root{
+  --black:#0D0D0D;
+  --green:#C6FF00;
+  --text:#1A1A1A;
+  --text2:#666;
+  --bg:#F7F7F5;
+  --card:#FFFFFF;
+  --border:#E8E8E4;
+  --display:'Oswald','Noto Sans SC',sans-serif;
+  --body:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:var(--body);color:var(--text);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column;}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:.02em;}
 
+.nav{background:var(--black);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 32px;height:64px;border-bottom:2px solid #fff;position:sticky;top:0;z-index:100;}
+.nav-logo{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:.06em;}
+.nav-logo .mark{width:34px;height:34px;background:#fff;border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--black);font-weight:700;font-size:16px;}
+.nav-links{display:flex;gap:28px;align-items:center;}
+.nav-links a{font-size:14px;font-weight:500;opacity:.85;transition:opacity .2s,color .2s;padding:4px 0;}
+.nav-links a:hover{opacity:1;color:var(--green);}
+@media(max-width:760px){.nav{padding:0 18px;}.nav-links{display:none;}.nav-logo{font-size:16px;}}
+
+main{flex:1;display:flex;align-items:center;justify-content:center;padding:64px 24px;}
+.wrap{width:100%;max-width:860px;}
+.eyebrow{font-family:var(--display);font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--text2);margin-bottom:14px;}
+.code{font-family:var(--display);font-size:clamp(84px,18vw,168px);font-weight:700;line-height:.92;letter-spacing:.02em;color:var(--black);}
+.code .accent{color:var(--green);-webkit-text-stroke:2px var(--black);}
+h1{font-size:clamp(22px,3.4vw,32px);font-weight:700;margin:8px 0 14px;line-height:1.25;}
+.lead{font-size:15px;color:var(--text2);max-width:600px;margin-bottom:32px;}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;border-radius:4px;font-weight:600;font-size:14px;letter-spacing:.04em;transition:all .2s;}
+.btn-primary{background:var(--black);color:#fff;}
+.btn-primary:hover{background:#333;transform:translateY(-1px);}
+.btn-outline{background:transparent;color:var(--black);border:2px solid var(--black);}
+.btn-outline:hover{background:var(--black);color:#fff;}
+
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px 26px;display:flex;flex-wrap:wrap;gap:24px 40px;align-items:center;justify-content:space-between;}
+.card .k{font-family:var(--display);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--text2);margin-bottom:6px;}
+.card .v{font-size:15px;font-weight:600;color:var(--text);}
+.card a.v:hover{color:#5A7A00;}
+
+.quick{border-top:1px solid var(--border);padding-top:22px;margin-top:26px;display:flex;flex-wrap:wrap;gap:10px 26px;font-size:13.5px;}
+.quick a{color:var(--text2);border-bottom:1px solid transparent;transition:color .2s,border-color .2s;}
+.quick a:hover{color:var(--black);border-color:var(--black);}
+
+footer{background:var(--black);color:rgba(255,255,255,.6);font-size:12.5px;padding:20px 32px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;}
+footer a{color:rgba(255,255,255,.8);}
+footer a:hover{color:var(--green);}
+</style>
 </head>
-<body><header class="site-head">
-  <div class="wrap head-inner">
-    <a class="brand" href="index.html" aria-label="AURELLE — home">
-      <img src="assets/img/logo-mark.png" width="34" height="34" alt="AURELLE crescent mark">
-      <span class="wordmark">AURELLE</span>
-    </a>
-    <nav class="main-nav" aria-label="Main"><a href="collections/earrings.html">Earrings</a><a href="collections/bracelets.html">Bracelets</a><a href="collections/necklaces.html">Necklaces</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="shipping.html">Shipping &amp; payment</a></nav>
-    <div class="head-tools">
-      <div class="lang-switch" aria-label="Language"><a class="is-active" href="404.html" aria-current="true">EN</a><a href="zh/404.html" hreflang="zh-Hans">中文</a><a href="es/404.html" hreflang="es">ES</a></div>
-      <a class="cart-link" href="cart.html" aria-label="Bag">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 11H7L6 8Z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M9.5 8V6.5a2.5 2.5 0 0 1 5 0V8" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
-        <span data-cart-count>0</span>
-      </a>
-    </div>
+<body>
+
+<nav class="nav">
+  <a class="nav-logo" href="/"><span class="mark">LI</span>LI ELECTRIC</a>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/products.html">Products</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
   </div>
-</header>
+</nav>
+
 <main>
-  <div class="wrap" style="padding-block:clamp(3rem,8vw,6rem)">
-    <span class="eyebrow">404</span>
-    <h1 class="display" style="font-size:clamp(2rem,4vw,3.4rem);margin:.5rem 0 1rem">Page not found</h1>
-    <p class="serif-lead" style="max-width:46ch">The page you were looking for has moved or never existed.</p>
-    <div class="btn-row" style="margin-top:1.6rem">
-      <a class="btn" href="index.html">Back to the collection</a>
-      <a class="btn ghost" href="zh/index.html">中文</a><a class="btn ghost" href="es/index.html">ES</a>
+  <div class="wrap">
+    <div class="eyebrow">Error 404</div>
+    <div class="code">4<span class="accent">0</span>4</div>
+    <h1>This page has moved — but the machines are still here.</h1>
+    <p class="lead">The link you followed points to a page that no longer exists or was renamed. Every product line, spec sheet and price list is still available from the pages below.</p>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="/">Back to Homepage</a>
+      <a class="btn btn-outline" href="/products.html">Browse All Products</a>
+    </div>
+
+    <div class="card">
+      <div>
+        <div class="k">Sales &amp; OEM Inquiry</div>
+        <a class="v" href="mailto:sales@lielectric.cn">sales@lielectric.cn</a>
+      </div>
+      <div>
+        <div class="k">Phone / WhatsApp</div>
+        <a class="v" href="tel:+8618967973377">+86 189 6797 3377</a>
+      </div>
+      <div>
+        <div class="k">Factory</div>
+        <div class="v">Jinhua, Zhejiang, China</div>
+      </div>
+    </div>
+
+    <div class="quick">
+      <a href="/products/em02.html">EM02 Electric Motorcycle</a>
+      <a href="/products/lw614200.html">614V 200Ah LiFePO4 Pack</a>
+      <a href="/products.html">All 20 Models</a>
+      <a href="/pay.html">Pay Sample / Deposit</a>
+      <a href="/contact.html">Request a Quotation</a>
     </div>
   </div>
 </main>
-<footer class="site-foot">
-  <div class="wrap">
-    <div class="foot-grid">
-      <div class="foot-brand">
-        <img src="assets/img/logo-paper.png" alt="AURELLE" width="168">
-        <p>Silver jewellery, made in small batches in Jinhua, Zhejiang.</p>
-      </div>
-      <div class="foot-col"><h4>Shop</h4><ul><li><a href="collections/earrings.html">Earrings</a></li><li><a href="collections/bracelets.html">Bracelets</a></li><li><a href="collections/necklaces.html">Necklaces</a></li></ul></div>
-      <div class="foot-col"><h4>Information</h4><ul><li><a href="shipping.html">Shipping &amp; payment</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="cart.html">Bag</a></li></ul></div>
-      <div class="foot-col"><h4>Contact</h4><ul>
-        <li><a href="mailto:sales@lielectric.cn">sales@lielectric.cn</a></li>
-        <li><a href="tel:+8613362952925">+86-13362952925</a></li>
-        <li><a href="https://wa.me/8613362952925" rel="noopener">WhatsApp</a></li>
-        <li>NO.183 4th floor, Jinou Road, Dongxiao Street, Jindong District, Jinhua City, Zhejiang Province, China</li>
-      </ul></div>
-    </div>
-    <div class="legal">
-      <span>© 2026 AURELLE · JINHUA LI ELECTRIC TRADING CO., LTD</span>
-      <span>Prices in USD. Shipping quoted per order.</span>
-    </div>
-  </div>
+
+<footer>
+  <div>© 2026 Jinhua Li Electric Trading Co., Ltd — LI ELECTRIC. All rights reserved.</div>
+  <div><a href="/sitemap.xml">Sitemap</a> · <a href="/contact.html">Contact</a></div>
 </footer>
-<script>window.AURELLE_ROOT = "";</script>
-<script src="assets/js/config.js?v=1793979207"></script>
-<script>window.AURELLE_I18N = {"added": "Added to your bag", "remove": "Remove", "decrease": "Decrease quantity", "increase": "Increase quantity", "quantity": "Quantity", "subtotal": "Subtotal", "shipping": "Shipping", "quoted": "Quoted before payment", "total": "Total", "payMethod": "Payment method", "payOnline": "Secure payment link", "payOffline": "Bank transfer (T/T)", "noteOnline": "Payments are processed on PayPal's secure page. This site never sees your card number.", "noteOffline": "Use the order number as the transfer reference so we can match your payment.", "fillRequired": "Please complete the highlighted fields.", "bagEmptyShort": "Your bag is empty", "copied": "Order details copied", "copyFail": "Could not copy — select the text manually", "orderRefLabel": "Order reference", "payNow": "Pay now — secure checkout", "payNowNote": "Shipping is quoted separately and invoiced after the payment.", "payUnavailable": "Online payment is not switched on yet — send the order by email or WhatsApp and we will reply with a payment link.", "payFail": "Payment could not be started. Please try again or write to us.", "paid": "Payment received"}; window.AURELLE_LOCALE = "en-US";</script>
-<script src="assets/js/catalog-en.js?v=1793979207"></script>
-<script src="assets/js/site.js?v=1793979207"></script>
+
 </body>
 </html>
